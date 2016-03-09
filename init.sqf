@@ -4,6 +4,7 @@ if (isServer) then {
   OBJECTIVE_MARKER_HIDDEN = true;
   publicVariable "OBJECTIVE_MARKER_HIDDEN";
 
+  [] execVM "server\missionMarkers.sqf";
   [] execVM "server\objectiveMarker.sqf";
 
 };
