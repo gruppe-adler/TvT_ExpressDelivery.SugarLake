@@ -1,0 +1,26 @@
+enableDebugConsole = 2;
+disabledAI = 1;
+
+class CfgSounds
+{
+	sounds[] = {beep, signal_lost};
+
+	class beep
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "beep";
+		// filename, volume, pitch
+		sound[] = {"sounds\beep2.ogg", 1, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class signal_lost
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "signal_lost";
+		// filename, volume, pitch
+		sound[] = {"sounds\signal_lost.ogg", 1, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+};
