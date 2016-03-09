@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=91;
+		nextID=93;
 	};
 	class MarkerIDProvider
 	{
-		nextID=41;
+		nextID=42;
 	};
 	class Camera
 	{
-		pos[]={3673.7197,64.710411,5495.8193};
-		dir[]={0.44346982,-0.40571353,0.79920763};
-		up[]={0.19685106,0.91400081,0.35475892};
-		aside[]={0.87440628,-6.9849193e-010,-0.48519674};
+		pos[]={8210.3799,121.41774,3631.6538};
+		dir[]={-0.50916207,-0.68340999,0.52318186};
+		up[]={-0.47663954,0.73003113,0.48976493};
+		aside[]={0.71664983,3.1199306e-008,0.69744509};
 	};
 };
 binarizationWanted=0;
@@ -86,13 +86,13 @@ class Mission
 	};
 	class Entities
 	{
-		items=44;
+		items=28;
 		class Item0
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={8525.1318,-15,8039.6426};
+				position[]={-406.50977,-15,7945.1328};
 			};
 			id=0;
 			type="ModuleCurator_F";
@@ -354,6 +354,7 @@ class Mission
 			class Attributes
 			{
 				name="trigger_dropoff_green";
+				condition="this && (theobjective in thisList)";
 				timeout[]={900,900,900};
 				repeatable=1;
 				activationBy="GUER SEIZED";
@@ -365,10 +366,11 @@ class Mission
 		class Item5
 		{
 			dataType="Trigger";
-			position[]={7567.0371,0,7956.3916};
+			position[]={7567.0371,0.00011317432,7956.3921};
 			class Attributes
 			{
 				name="trigger_dropoff_blue";
+				condition="this && (theobjective in thisList)";
 				timeout[]={900,900,900};
 				activationBy="WEST SEIZED";
 				effectSound="fanfare";
@@ -378,19 +380,6 @@ class Mission
 		};
 		class Item6
 		{
-			dataType="Trigger";
-			position[]={8125.2129,0.996171,3701.7661};
-			class Attributes
-			{
-				name="trigger_dropoff_red";
-				timeout[]={900,900,900};
-				activationBy="EAST SEIZED";
-			};
-			id=40;
-			type="EmptyDetectorAreaR50";
-		};
-		class Item7
-		{
 			dataType="Marker";
 			position[]={3596.0544,1.9400001,5711.7021};
 			name="marker_spawn_red";
@@ -398,7 +387,7 @@ class Mission
 			colorName="ColorEAST";
 			id=41;
 		};
-		class Item8
+		class Item7
 		{
 			dataType="Marker";
 			position[]={2375.3008,0.99833,1394.9819};
@@ -407,7 +396,7 @@ class Mission
 			colorName="ColorWEST";
 			id=42;
 		};
-		class Item9
+		class Item8
 		{
 			dataType="Marker";
 			position[]={7123.6719,1,4619.6523};
@@ -416,17 +405,17 @@ class Mission
 			colorName="ColorGUER";
 			id=43;
 		};
-		class Item10
+		class Item9
 		{
 			dataType="Marker";
-			position[]={2365.6316,-8.0963955,44.052734};
+			position[]={2280.2979,-15,-134.37207};
 			name="marker_3";
 			type="mil_arrow";
 			colorName="ColorCIV";
 			angle=30.153553;
 			id=54;
 		};
-		class Item11
+		class Item10
 		{
 			dataType="Marker";
 			position[]={3075.4788,-1,1038.5161};
@@ -435,70 +424,7 @@ class Mission
 			colorName="ColorCIV";
 			id=55;
 		};
-		class Item12
-		{
-			dataType="Marker";
-			position[]={2539.7371,-5.4500947,346.33691};
-			name="marker_5";
-			type="mil_dot";
-			colorName="ColorCIV";
-			id=56;
-		};
-		class Item13
-		{
-			dataType="Marker";
-			position[]={2835.439,-7.5423622,648.8623};
-			name="marker_7";
-			type="mil_dot";
-			colorName="ColorCIV";
-			id=57;
-		};
-		class Item14
-		{
-			dataType="Marker";
-			position[]={3377.938,-7.5877433,1375.6064};
-			name="marker_6";
-			type="mil_dot";
-			colorName="ColorCIV";
-			id=58;
-		};
-		class Item15
-		{
-			dataType="Marker";
-			position[]={3841.6958,-11.944686,1832.9766};
-			name="marker_8";
-			type="mil_dot";
-			colorName="ColorCIV";
-			id=59;
-		};
-		class Item16
-		{
-			dataType="Marker";
-			position[]={4280.9741,-10.660374,2049.8584};
-			name="marker_9";
-			type="mil_dot";
-			colorName="ColorCIV";
-			id=60;
-		};
-		class Item17
-		{
-			dataType="Marker";
-			position[]={4815.8271,-11.767236,2059.0488};
-			name="marker_10";
-			type="mil_dot";
-			colorName="ColorCIV";
-			id=61;
-		};
-		class Item18
-		{
-			dataType="Marker";
-			position[]={5287.1392,-12.337267,2060.8867};
-			name="marker_11";
-			type="mil_dot";
-			colorName="ColorCIV";
-			id=62;
-		};
-		class Item19
+		class Item11
 		{
 			dataType="Marker";
 			position[]={5444.8389,-5,2639.5166};
@@ -507,34 +433,7 @@ class Mission
 			colorName="ColorCIV";
 			id=63;
 		};
-		class Item20
-		{
-			dataType="Marker";
-			position[]={5596.9063,-5,2050.1958};
-			name="marker_12";
-			type="mil_dot";
-			colorName="ColorCIV";
-			id=64;
-		};
-		class Item21
-		{
-			dataType="Marker";
-			position[]={5750.1523,-8.416379,3258.3506};
-			name="marker_15";
-			type="mil_dot";
-			colorName="ColorCIV";
-			id=66;
-		};
-		class Item22
-		{
-			dataType="Marker";
-			position[]={5702.1333,-5.2788343,2622.6055};
-			name="marker_17";
-			type="mil_dot";
-			colorName="ColorCIV";
-			id=68;
-		};
-		class Item23
+		class Item12
 		{
 			dataType="Marker";
 			position[]={5258.9756,-5,4194.2954};
@@ -543,61 +442,7 @@ class Mission
 			colorName="ColorCIV";
 			id=70;
 		};
-		class Item24
-		{
-			dataType="Marker";
-			position[]={5920.334,-14.88312,3691.2295};
-			name="marker_14";
-			type="mil_dot";
-			colorName="ColorCIV";
-			id=71;
-		};
-		class Item25
-		{
-			dataType="Marker";
-			position[]={5609.7144,-5,4027.5811};
-			name="marker_18";
-			type="mil_dot";
-			colorName="ColorCIV";
-			id=72;
-		};
-		class Item26
-		{
-			dataType="Marker";
-			position[]={6244.248,-12.290052,4154.2891};
-			name="marker_19";
-			type="mil_dot";
-			colorName="ColorCIV";
-			id=73;
-		};
-		class Item27
-		{
-			dataType="Marker";
-			position[]={6335.3726,-11.999408,4691.6934};
-			name="marker_21";
-			type="mil_dot";
-			colorName="ColorCIV";
-			id=74;
-		};
-		class Item28
-		{
-			dataType="Marker";
-			position[]={6424.1621,-14.740588,5511.8164};
-			name="marker_22";
-			type="mil_dot";
-			colorName="ColorCIV";
-			id=75;
-		};
-		class Item29
-		{
-			dataType="Marker";
-			position[]={6117.6763,-14.875804,6179.0898};
-			name="marker_16";
-			type="mil_dot";
-			colorName="ColorCIV";
-			id=77;
-		};
-		class Item30
+		class Item13
 		{
 			dataType="Marker";
 			position[]={5826.104,6,6277.7373};
@@ -606,7 +451,7 @@ class Mission
 			colorName="ColorCIV";
 			id=78;
 		};
-		class Item31
+		class Item14
 		{
 			dataType="Marker";
 			position[]={6182.145,5.936089,5675.1284};
@@ -615,7 +460,7 @@ class Mission
 			colorName="ColorCIV";
 			id=79;
 		};
-		class Item32
+		class Item15
 		{
 			dataType="Marker";
 			position[]={5919.6914,5.938128,5221.9478};
@@ -624,7 +469,7 @@ class Mission
 			colorName="ColorCIV";
 			id=80;
 		};
-		class Item33
+		class Item16
 		{
 			dataType="Marker";
 			position[]={5608.334,5.9400001,5730.5537};
@@ -633,7 +478,7 @@ class Mission
 			colorName="ColorCIV";
 			id=81;
 		};
-		class Item34
+		class Item17
 		{
 			dataType="Marker";
 			position[]={5250.9585,5.9400001,6251.5176};
@@ -642,7 +487,7 @@ class Mission
 			colorName="ColorCIV";
 			id=82;
 		};
-		class Item35
+		class Item18
 		{
 			dataType="Marker";
 			position[]={4909.3721,5.9400001,6771.3232};
@@ -651,7 +496,7 @@ class Mission
 			colorName="ColorCIV";
 			id=83;
 		};
-		class Item36
+		class Item19
 		{
 			dataType="Marker";
 			position[]={4511.3496,5.9400001,7332.7139};
@@ -660,7 +505,7 @@ class Mission
 			colorName="ColorCIV";
 			id=84;
 		};
-		class Item37
+		class Item20
 		{
 			dataType="Marker";
 			position[]={4181.644,5.9400001,7825.7866};
@@ -669,7 +514,7 @@ class Mission
 			colorName="ColorCIV";
 			id=85;
 		};
-		class Item38
+		class Item21
 		{
 			dataType="Marker";
 			position[]={3774.7104,5.9400001,7799.0542};
@@ -678,7 +523,7 @@ class Mission
 			colorName="ColorCIV";
 			id=86;
 		};
-		class Item39
+		class Item22
 		{
 			dataType="Marker";
 			position[]={3740.0032,1.9400001,7057.4639};
@@ -687,7 +532,7 @@ class Mission
 			colorName="ColorCIV";
 			id=87;
 		};
-		class Item40
+		class Item23
 		{
 			dataType="Marker";
 			position[]={4025.0605,1.8865404,6356.5034};
@@ -696,7 +541,7 @@ class Mission
 			colorName="ColorCIV";
 			id=88;
 		};
-		class Item41
+		class Item24
 		{
 			dataType="Marker";
 			position[]={4015.7146,1.664903,5753.6772};
@@ -705,7 +550,7 @@ class Mission
 			colorName="ColorCIV";
 			id=89;
 		};
-		class Item42
+		class Item25
 		{
 			dataType="Marker";
 			position[]={3662.1492,1.9400001,5608.7734};
@@ -714,14 +559,29 @@ class Mission
 			colorName="ColorCIV";
 			id=90;
 		};
-		class Item43
+		class Item26
 		{
 			dataType="Marker";
-			position[]={5586.9385,-1.8845211,6706.6978};
-			name="marker_26";
-			type="mil_end";
+			position[]={5594.9873,-4.7494841,6696.1489};
+			name="marker_41";
+			type="mil_start";
 			colorName="ColorCIV";
-			id=76;
+			id=91;
+		};
+		class Item27
+		{
+			dataType="Trigger";
+			position[]={8125.4868,0.996171,3705.333};
+			class Attributes
+			{
+				name="trigger_dropoff_red";
+				condition="this && (theobjective in thisList)";
+				timeout[]={900,900,900};
+				activationBy="EAST SEIZED";
+				effectSound="fanfare";
+			};
+			id=92;
+			type="EmptyDetectorAreaR50";
 		};
 	};
 };

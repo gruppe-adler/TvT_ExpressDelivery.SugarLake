@@ -41,3 +41,33 @@ _marker setMarkerShape "ELLIPSE";
 _marker setMarkerSize [_size select 0, _size select 1];
 _marker setMarkerBrush "Border";
 _marker setMarkerColor "COLORGUER";
+
+
+
+_legendMarkerPos = [8500,8100,0];
+_yIncrement = -350;
+_mcd_fnc_legendmarker = {
+  _markername = format ["marker_legend_%1", (_legendMarkerPos select 1)];
+  _marker = createMarker [_markername, _legendMarkerPos];
+  _marker setMarkerType (_this select 0);
+  _marker setMarkerColor (_this select 1);
+  _marker setMarkerText (_this select 2);
+
+  _legendMarkerPos = _legendMarkerPos vectorAdd [0,_yIncrement,0];
+};
+
+_legendMarkers = [
+  ["mil_arrow", "COLORCIV", "Startpunkt des Transportbootes"],
+  ["mil_pickup", "COLORCIV", "Haltepunkt zum Be-/Entladen"],
+  ["mil_start", "COLORCIV", "Fracht wird auf LKW verladen"],
+  ["mil_dot", "COLORCIV", "Route des LKWs"],
+  ["mil_end", "COLORCIV", "Endpunkt des LKWs"],
+  ["mil_flag", "COLORWEST", "Basis Spezialeinsatzkräfte"],
+  ["mil_flag", "COLOREAST", "Basis russische Mafia"],
+  ["mil_flag", "COLORGUER", "Basis afrikanische Rebellen"],
+  ["mil_end", "COLORWEST", "Abgabepunkt Spezialeinsatzkräfte"],
+  ["mil_end", "COLOREAST", "Abgabepunkt russische Mafia"],
+  ["mil_end", "COLORGUER", "Abgabepunkt afrikanische Rebellen"]
+];
+
+{_x call _mcd_fnc_legendmarker} forEach _legendMarkers;
