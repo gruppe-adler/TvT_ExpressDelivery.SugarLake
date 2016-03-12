@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3776.5847,147.33769,5384.1274};
-		dir[]={-0.31827769,-0.5314244,0.78504926};
-		up[]={-0.19966842,0.84710348,0.49249262};
-		aside[]={0.92673838,1.5948899e-007,0.3757219};
+		pos[]={2128.5342,9.5191813,1503.3506};
+		dir[]={-0.67491949,-0.33199134,-0.65900171};
+		up[]={-0.23754217,0.94328028,-0.23193982};
+		aside[]={-0.69862443,-3.2922253e-007,0.71549904};
 	};
 };
 binarizationWanted=0;
@@ -91,7 +91,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=38;
+		items=37;
 		class Item0
 		{
 			dataType="Logic";
@@ -206,7 +206,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2260.3589,1.2361468,18.476294};
+				position[]={2256.4785,2.2025118,-193.82971};
 			};
 			side="Empty";
 			class Attributes
@@ -245,10 +245,11 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2259.4539,1.3031225,13.237531};
-				angles[]={0,1.4216648,0};
+				position[]={2254.9099,1.3031225,-193.14258};
+				angles[]={0,0.40422133,0};
 			};
-			side="Empty";
+			side="Civilian";
+			flags=2;
 			class Attributes
 			{
 				name="theboat";
@@ -462,15 +463,6 @@ class Mission
 			type="EmptyDetectorAreaR50";
 		};
 		class Item21
-		{
-			dataType="Group";
-			side="Independent";
-			class Attributes
-			{
-			};
-			id=96;
-		};
-		class Item22
 		{
 			dataType="Group";
 			side="Independent";
@@ -778,7 +770,7 @@ class Mission
 			};
 			id=102;
 		};
-		class Item23
+		class Item22
 		{
 			dataType="Group";
 			side="Independent";
@@ -1086,7 +1078,7 @@ class Mission
 			};
 			id=116;
 		};
-		class Item24
+		class Item23
 		{
 			dataType="Group";
 			side="West";
@@ -1098,12 +1090,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2103.4783,0.99964213,1490.8634};
+						position[]={2103.478,0.99970186,1490.863};
 					};
 					side="West";
 					flags=3;
 					class Attributes
 					{
+						description="Squadleader";
 						isPlayable=1;
 					};
 					id=128;
@@ -1156,12 +1149,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2097.6943,0.99970186,1485.1165};
+						position[]={2097.6941,0.99970186,1485.1161};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
+						description="Auto Rifleman (M249)";
 						isPlayable=1;
 					};
 					id=131;
@@ -1214,12 +1208,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2102.0544,0.99970186,1485.1736};
+						position[]={2102.054,0.99970186,1485.1741};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
+						description="Auto Rifleman Ass.";
 						isPlayable=1;
 					};
 					id=132;
@@ -1272,12 +1267,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2105.8232,0.99970186,1484.4407};
+						position[]={2105.823,0.99970186,1484.441};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
+						description="Combat Medic";
 						isPlayable=1;
 					};
 					id=133;
@@ -1330,12 +1326,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2108.585,0.99970222,1484.2357};
+						position[]={2108.585,0.99970186,1484.2361};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
+						description="Rifleman";
 						isPlayable=1;
 					};
 					id=134;
@@ -1389,7 +1386,7 @@ class Mission
 			};
 			id=127;
 		};
-		class Item25
+		class Item24
 		{
 			dataType="Group";
 			side="West";
@@ -1401,12 +1398,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2121.4324,0.99970126,1488.9282};
+						position[]={2121.4319,0.99970186,1488.9281};
 					};
 					side="West";
 					flags=3;
 					class Attributes
 					{
+						description="Teamleader";
 						isPlayable=1;
 					};
 					id=136;
@@ -1459,12 +1457,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2123.5637,0.99970186,1483.7546};
+						position[]={2123.564,0.99970186,1483.755};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
+						description="Combat Medic";
 						isPlayable=1;
 					};
 					id=138;
@@ -1517,12 +1516,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2116.2129,0.99964976,1485.0695};
+						position[]={2116.2129,0.99970186,1485.0691};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
+						description="Rifleman";
 						isPlayable=1;
 					};
 					id=140;
@@ -1575,12 +1575,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2120.6724,0.9996841,1484.4536};
+						position[]={2120.6721,0.99970186,1484.4541};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
+						description="Rifleman";
 						isPlayable=1;
 					};
 					id=141;
@@ -1633,12 +1634,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2127.0698,0.99958301,1483.0038};
+						position[]={2127.0701,0.99970186,1483.004};
 					};
 					side="West";
 					flags=1;
 					class Attributes
 					{
+						description="Rifleman";
 						isPlayable=1;
 					};
 					id=142;
@@ -1692,7 +1694,7 @@ class Mission
 			};
 			id=135;
 		};
-		class Item26
+		class Item25
 		{
 			dataType="Group";
 			side="East";
@@ -2000,7 +2002,7 @@ class Mission
 			};
 			id=143;
 		};
-		class Item27
+		class Item26
 		{
 			dataType="Group";
 			side="East";
@@ -2308,7 +2310,7 @@ class Mission
 			};
 			id=150;
 		};
-		class Item28
+		class Item27
 		{
 			dataType="Group";
 			side="Civilian";
@@ -2320,25 +2322,90 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2258.0601,0.99760985,18.474745};
-						angles[]={0,2.3064511,0};
+						position[]={2254.9099,0.0014388561,-193.09258};
+						angles[]={0,0.40422133,0};
 					};
 					side="Civilian";
 					flags=3;
 					class Attributes
 					{
+						name="thecourier";
+						description="Der  Kurier";
 						isPlayer=1;
 					};
 					id=157;
 					type="C_man_hunter_1_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=157;
+						item1=7;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
 			id=156;
 		};
-		class Item29
+		class Item28
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2349,10 +2416,52 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				fuel=0;
+				lock="LOCKED";
+				init="null = [this] execvm ""helpers\clearbox.sqf"";";
 				name="boat_blue_3";
 			};
 			id=158;
+			type="B_Boat_Transport_01_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[2]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item29
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2161.7461,1.2458847,1457.743};
+				angles[]={0,1.6943482,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				lock="LOCKED";
+				init="null = [this] execvm ""helpers\clearbox.sqf"";";
+				name="boat_blue_2";
+			};
+			id=159;
 			type="B_Boat_Transport_01_F";
 			class CustomAttributes
 			{
@@ -2383,16 +2492,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2161.7461,1.2458847,1457.743};
-				angles[]={0,1.6943482,0};
+				position[]={2165.7781,1.2452965,1463.995};
+				angles[]={0,1.6744515,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				fuel=0;
-				name="boat_blue_2";
+				lock="LOCKED";
+				init="null = [this] execvm ""helpers\clearbox.sqf"";";
+				name="boat_blue_1";
 			};
-			id=159;
+			id=160;
 			type="B_Boat_Transport_01_F";
 			class CustomAttributes
 			{
@@ -2423,17 +2533,18 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2165.7781,1.2452965,1463.995};
-				angles[]={0,1.6744515,0};
+				position[]={3556.7429,1.2456822,5674.9878};
+				angles[]={0,3.5139062,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				fuel=0;
-				name="boat_blue_1";
+				lock="LOCKED";
+				init="null = [this] execvm ""helpers\clearbox.sqf"";";
+				name="boat_red_3";
 			};
-			id=160;
-			type="B_Boat_Transport_01_F";
+			id=161;
+			type="O_Boat_Transport_01_F";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2463,16 +2574,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3556.7429,1.2456822,5674.9878};
-				angles[]={0,3.5139062,0};
+				position[]={3558.7971,1.2451346,5666.3149};
+				angles[]={0,3.5117772,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				fuel=0;
-				name="boat_red_3";
+				lock="LOCKED";
+				init="null = [this] execvm ""helpers\clearbox.sqf"";";
+				name="boat_red_2";
 			};
-			id=161;
+			id=162;
 			type="O_Boat_Transport_01_F";
 			class CustomAttributes
 			{
@@ -2503,16 +2615,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3558.7971,1.2451346,5666.3149};
-				angles[]={0,3.5117772,0};
+				position[]={3561.2839,1.2455077,5658.728};
+				angles[]={0,3.4527848,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				fuel=0;
-				name="boat_red_2";
+				lock="LOCKED";
+				init="null = [this] execvm ""helpers\clearbox.sqf"";";
+				name="boat_red_1";
 			};
-			id=162;
+			id=163;
 			type="O_Boat_Transport_01_F";
 			class CustomAttributes
 			{
@@ -2543,17 +2656,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3561.2839,1.2455077,5658.728};
-				angles[]={0,3.4527848,0};
+				position[]={7198.5981,1.2453184,4707.4609};
 			};
 			side="Empty";
 			class Attributes
 			{
-				fuel=0;
-				name="boat_red_1";
+				lock="LOCKED";
+				init="null = [this] execvm ""helpers\clearbox.sqf"";";
+				name="boat_green_3";
 			};
-			id=163;
-			type="O_Boat_Transport_01_F";
+			id=164;
+			type="I_Boat_Transport_01_F";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2583,15 +2696,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7198.375,1.244809,4706.645};
+				position[]={7193.1108,1.2453337,4711.5269};
 			};
 			side="Empty";
 			class Attributes
 			{
-				fuel=0;
-				name="boat_green_3";
+				lock="LOCKED";
+				init="null = [this] execvm ""helpers\clearbox.sqf"";";
+				name="boat_green_2";
 			};
-			id=164;
+			id=165;
 			type="I_Boat_Transport_01_F";
 			class CustomAttributes
 			{
@@ -2622,51 +2736,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7193.1108,1.2453337,4711.5269};
-			};
-			side="Empty";
-			class Attributes
-			{
-				fuel=0;
-				name="boat_green_2";
-			};
-			id=165;
-			type="I_Boat_Transport_01_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""FirstAidKit""],[2]],[[],[]],[[],[]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item37
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={7188.0151,1.2446158,4715.791};
 			};
 			side="Empty";
 			class Attributes
 			{
-				fuel=0;
+				lock="LOCKED";
+				init="null = [this] execvm ""helpers\clearbox.sqf"";";
 				name="boat_green_1";
 			};
 			id=166;

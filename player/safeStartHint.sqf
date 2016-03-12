@@ -4,6 +4,7 @@
 */
 
 if (!hasInterface) exitWith {};
+if (str side player == "CIV") exitWith {};
 
 _mcd_fnc_safeStartHint = {
 
@@ -13,8 +14,7 @@ _mcd_fnc_safeStartHint = {
 
   //parse static text
   _headline = parseText format ["<t align='center'>Spielstart für %1 in:</t>", _playerSide];
-  _startRule = parseText "<t align='center'><t color='#708090'>----------------------------------------------<br /></t></t>";
-  _endRule = parseText "<t align='center'><t color='#708090'><br />----------------------------------------------<br /></t></t>";
+  _rule = parseText "<t align='center'><t color='#708090'>----------------------------------------------<br /></t></t>";
   _lineBreak = parseText "<br />";
 
   diag_log format ["Starting hint with %1 seconds.", _startDelay];
@@ -22,21 +22,21 @@ _mcd_fnc_safeStartHint = {
   //countdown hint
   for "_i" from 0 to _startDelay-6 do {
     _timeLeft = parseText format ["<t align='center'><t color='#ffff00'>%1s</t></t>", _startDelay - _i];
-    hint composeText [_startRule,_headline, _lineBreak, _timeLeft,_endRule];
+    hint composeText [_rule,_headline, _lineBreak, _timeLeft, _lineBreak, _rule];
     sleep 1;
   };
 
   //countdown hint + sound for the last 5 seconds
   for "_i" from _startDelay-5 to _startDelay-1 do{
     _timeLeft = parseText format ["<t align='center'><t color='#ffff00'>%1s</t></t>", _startDelay - _i];
-    hint composeText [_startRule,_headline, _lineBreak, _timeLeft,_endRule];
+    hint composeText [_rule,_headline, _lineBreak, _timeLeft, _lineBreak, _rule];
     [] spawn {player say3D "addTime"};
     sleep 1;
   };
 
   //start message
   _startText = parseText "<t align='center'><t color='#00ff00'>LOS LOS LOS!</t></t>";
-  hint composeText [_startRule, _startText, _endRule];
+  hint composeText [_rule, _startText, _lineBreak, _rule];
   player say3D "FD_Start_F";
 };
 
