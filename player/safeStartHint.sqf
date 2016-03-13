@@ -17,8 +17,6 @@ _mcd_fnc_safeStartHint = {
   _rule = parseText "<t align='center'><t color='#708090'>----------------------------------------------<br /></t></t>";
   _lineBreak = parseText "<br />";
 
-  diag_log format ["Starting hint with %1 seconds.", _startDelay];
-
   //countdown hint
   for "_i" from 0 to _startDelay-6 do {
     _timeLeft = parseText format ["<t align='center'><t color='#ffff00'>%1s</t></t>", _startDelay - _i];

@@ -1,5 +1,21 @@
-enableDebugConsole = 2;
-disabledAI = 1;
+class Header
+{
+  gameType = CTF;
+  minPlayers = 2;
+  maxPlayers = 31;
+};
+
+
+author = "McDiod & Fridelcastro für Gruppe Adler";
+overviewText = "";
+onLoadName = "??????";
+loadScreen = "pic\loadscreen.jpg";
+
+respawnDelay = 999999;
+respawn = 3;
+
+enableDebugConsole = 1;
+disabledAI = 0;
 
 class CfgSounds
 {

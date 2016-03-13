@@ -30,3 +30,8 @@ diag_log format ["Starting game for %1.", STARTORDER select 1];
 sleep (STARTDELAYS select 2) - (STARTDELAYS select 1) - (STARTDELAYS select 0);
 [STARTORDER select 2] execVM "server\startTeam.sqf";
 diag_log format ["Starting game for %1.", STARTORDER select 2];
+
+
+ALLTEAMSSTARTED = true;
+publicVariable "ALLTEAMSSTARTED";
+diag_log "Game has started for all teams.";

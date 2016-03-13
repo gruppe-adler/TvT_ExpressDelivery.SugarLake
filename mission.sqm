@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=167;
+		nextID=305;
 	};
 	class MarkerIDProvider
 	{
-		nextID=42;
+		nextID=48;
 	};
 	class Camera
 	{
-		pos[]={2128.5342,9.5191813,1503.3506};
-		dir[]={-0.67491949,-0.33199134,-0.65900171};
-		up[]={-0.23754217,0.94328028,-0.23193982};
-		aside[]={-0.69862443,-3.2922253e-007,0.71549904};
+		pos[]={2265.7356,25,-181.78735};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -91,7 +91,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=37;
+		items=43;
 		class Item0
 		{
 			dataType="Logic";
@@ -206,7 +206,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2256.4785,2.2025118,-193.82971};
+				position[]={2267.5354,3.4000108,-156.60542};
+				angles[]={0,1.4484363,0};
 			};
 			side="Empty";
 			class Attributes
@@ -245,13 +246,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2254.9099,1.3031225,-193.14258};
-				angles[]={0,0.40422133,0};
+				position[]={2265.7361,1.3031225,-156.787};
+				angles[]={0,0.42065924,0};
 			};
 			side="Civilian";
 			flags=2;
 			class Attributes
 			{
+				init="null = [this] execvm ""helpers\clearbox.sqf"";";
 				name="theboat";
 			};
 			id=7;
@@ -283,15 +285,15 @@ class Mission
 		class Item3
 		{
 			dataType="Trigger";
-			position[]={1541.3929,5.8600001,3360.8191};
+			position[]={1425.3091,5.8599925,3361.2744};
 			class Attributes
 			{
 				name="trigger_dropoff_green";
 				condition="this && (theobjective in thisList)";
-				timeout[]={900,900,900};
+				onActivation="TRIGGER_GREEN_ACTIVE = true;";
+				onDeactivation="TRIGGER_GREEN_ACTIVE = false;";
 				repeatable=1;
 				activationBy="GUER SEIZED";
-				effectSound="fanfare";
 			};
 			id=38;
 			type="EmptyDetectorAreaR50";
@@ -304,9 +306,10 @@ class Mission
 			{
 				name="trigger_dropoff_blue";
 				condition="this && (theobjective in thisList)";
-				timeout[]={900,900,900};
+				onActivation="TRIGGER_BLUE_ACTIVE = true;";
+				onDeactivation="TRIGGER_BLUE_ACTIVE = false;";
+				repeatable=1;
 				activationBy="WEST SEIZED";
-				effectSound="fanfare";
 			};
 			id=39;
 			type="EmptyDetectorAreaR50";
@@ -455,9 +458,10 @@ class Mission
 			{
 				name="trigger_dropoff_red";
 				condition="this && (theobjective in thisList)";
-				timeout[]={900,900,900};
+				onActivation="TRIGGER_RED_ACTIVE = true;";
+				onDeactivation="TRIGGER_RED_ACTIVE = false;";
+				repeatable=1;
 				activationBy="EAST SEIZED";
-				effectSound="fanfare";
 			};
 			id=92;
 			type="EmptyDetectorAreaR50";
@@ -2322,8 +2326,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2254.9099,0.0014388561,-193.09258};
-						angles[]={0,0.40422133,0};
+						position[]={2265.7361,0.0014388561,-156.73695};
+						angles[]={0,0.42065924,0};
 					};
 					side="Civilian";
 					flags=3;
@@ -2770,6 +2774,54 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item37
+		{
+			dataType="Marker";
+			position[]={2259.3486,0.996171,70.572754};
+			name="respawn_civilian";
+			type="Empty";
+			id=299;
+		};
+		class Item38
+		{
+			dataType="Marker";
+			position[]={2130.7454,0.998263,1498.4526};
+			name="respawn_west";
+			type="Empty";
+			id=300;
+		};
+		class Item39
+		{
+			dataType="Marker";
+			position[]={3647.3496,1.9400001,5727.0112};
+			name="respawn_east";
+			type="Empty";
+			id=301;
+		};
+		class Item40
+		{
+			dataType="Marker";
+			position[]={7103.0566,1,4662.1738};
+			name="respawn_guerrilla";
+			type="Empty";
+			id=302;
+		};
+		class Item41
+		{
+			dataType="Marker";
+			position[]={7106.8247,1,4657.6143};
+			name="respawn_guerrila";
+			type="Empty";
+			id=303;
+		};
+		class Item42
+		{
+			dataType="Marker";
+			position[]={7110.7207,1,4653.5562};
+			name="respawn_guerilla";
+			type="Empty";
+			id=304;
 		};
 	};
 };

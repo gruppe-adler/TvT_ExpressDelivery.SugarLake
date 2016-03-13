@@ -64,10 +64,10 @@ _legendMarkers = [
   ["mil_end", "COLORCIV", "Endpunkt des LKWs"],
   ["mil_flag", "COLORWEST", "Basis Spezialeinsatzkräfte"],
   ["mil_flag", "COLOREAST", "Basis russische Mafia"],
-  ["mil_flag", "COLORGUER", "Basis afrikanische Rebellen"],
+  ["mil_flag", "COLORGUER", "Basis Rebellen"],
   ["mil_end", "COLORWEST", "Abgabepunkt Spezialeinsatzkräfte"],
   ["mil_end", "COLOREAST", "Abgabepunkt russische Mafia"],
-  ["mil_end", "COLORGUER", "Abgabepunkt afrikanische Rebellen"]
+  ["mil_end", "COLORGUER", "Abgabepunkt Rebellen"]
 ];
 
 {_x call _mcd_fnc_legendmarker} forEach _legendMarkers;
