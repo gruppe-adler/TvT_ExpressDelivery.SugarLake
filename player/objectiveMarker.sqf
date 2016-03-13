@@ -18,9 +18,12 @@ markerAnimationIsRunning = false;
 
 markerAnimation = {
 	private ["_pulseSpeed","_pulsesize","_pulseMaxSize", "_modifier"];
+	_headline = parseText format ["<t align='center'>Empfange Peilsender.</t>", _this select 0, _this select 1];
+  _rule = parseText "<t align='center'><t color='#708090'>----------------------------------------------<br /></t></t>";
+  _lineBreak = parseText "<br />";
 
 	playSound "beep";
-	hint "Receiving tracking device.";
+	hint composeText [_rule,_headline,_lineBreak,_rule];
   /*
 	if (playerSide == west) then {
 		cutRsc ["gui_intel_paper_us","PLAIN",0];
@@ -66,7 +69,10 @@ ensureMarkerAnimation = {
 
 endTransmissionEffects = {
 	playSound "signal_lost";
-	hint "Tracking device signal lost.";
+	_headline = parseText format ["<t align='center'>Peilsender verloren.</t>", _this select 0, _this select 1];
+	_rule = parseText "<t align='center'><t color='#708090'>----------------------------------------------<br /></t></t>";
+	_lineBreak = parseText "<br />";
+	hint composeText [_rule,_headline,_lineBreak,_rule];
   /*
   if (playerSide == west) then {
 		cutRsc ["gui_intel_paper_us_lost","PLAIN",0];
