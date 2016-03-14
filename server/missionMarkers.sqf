@@ -67,7 +67,9 @@ _legendMarkers = [
   ["mil_flag", "COLORGUER", "Basis Rebellen"],
   ["mil_end", "COLORWEST", "Abgabepunkt Spezialeinsatzkräfte"],
   ["mil_end", "COLOREAST", "Abgabepunkt russische Mafia"],
-  ["mil_end", "COLORGUER", "Abgabepunkt Rebellen"]
+  ["mil_end", "COLORGUER", "Abgabepunkt Rebellen"],
+  ["c_car", "COLORBLACK", "Leere(s) Fahrzeug(e)"],
+  ["c_ship", "COLORBLACK", "Leere(s) Boot(e)"]
 ];
 
 {_x call _mcd_fnc_legendmarker} forEach _legendMarkers;

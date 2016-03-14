@@ -45,6 +45,7 @@ if (isServer) then {
 
   //scripts
   [] execVM "server\missionMarkers.sqf";
+  [] execVM "server\vehicleMarkers.sqf";
   [] execVM "server\objectiveMarker.sqf";
   [] execVM "server\startGame.sqf";
   [] execVM "server\dropoffTriggers.sqf";
