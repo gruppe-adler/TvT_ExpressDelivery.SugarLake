@@ -3,7 +3,11 @@ _winningTeam = _this select 0;
 
 if (hasInterface)then {
   //parse static text
-  _headline = parseText format ["<t align='center'>Team %1 hat gewonnen!</t>", _winningTeam];
+  if (_winningTeam == "Niemand") then {
+    _headline = parseText format ["<t align='center'>Der Koffer wurde zerstört! Mission fehlgeschlagen.</t>"];
+  } else {
+    _headline = parseText format ["<t align='center'>Team %1 hat gewonnen!</t>", _winningTeam];
+  };
   _rule = parseText "<t align='center'><t color='#708090'>----------------------------------------------<br /></t></t>";
   _lineBreak = parseText "<br />";
 
@@ -34,9 +38,12 @@ if (hasInterface)then {
     };
   };
 
+  if (_winningTeam == "Niemand") then {
+    ["end1", false, true] call BIS_fnc_endMission;
+  };
 };
 
 if (isServer) then {
-  sleep 10;
+  sleep 20;
   ["Lost"] call BIS_fnc_endMissionServer;
 };

@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6019.8154,43.114883,4605.6992};
-		dir[]={0.9131577,-0.40045756,-0.076091081};
-		up[]={0.39908397,0.91631317,-0.033254139};
-		aside[]={-0.083040126,6.8146619e-008,-0.99655324};
+		pos[]={2153.6404,15.541417,1478.1772};
+		dir[]={-0.85178018,-0.47821042,-0.2139952};
+		up[]={-0.46379909,0.87824297,-0.1165213};
+		aside[]={-0.2436613,4.2433385e-008,0.96986276};
 	};
 };
 binarizationWanted=0;
@@ -3157,7 +3157,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="SMG_02_F";
-								optics="FHQ_optic_MicroCCO_low";
+								optics="FHQ_optic_MicroCCO";
 								muzzle="muzzle_snds_L";
 								class primaryMuzzleMag
 								{
@@ -3302,7 +3302,7 @@ class Mission
 							class primaryWeapon
 							{
 								name="SMG_02_F";
-								optics="FHQ_optic_MicroCCO_low";
+								optics="FHQ_optic_MicroCCO";
 								muzzle="muzzle_snds_L";
 								class primaryMuzzleMag
 								{

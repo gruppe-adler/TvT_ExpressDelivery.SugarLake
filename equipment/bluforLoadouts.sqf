@@ -18,7 +18,8 @@ _blufor_rifleman = {
   for "_i" from 1 to 2 do {player addItemToUniform "ACE_EarPlugs";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
   player addVest "V_Police_heavy";
-  for "_i" from 1 to 9 do {player addItemToVest "ACE_30Rnd_556x45_Stanag_M995_AP_mag";};
+  for "_i" from 1 to 9 do {player addItemToVest "30Rnd_556x45_Stanag";};
+
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
@@ -58,7 +59,7 @@ _blufor_squadLead = {
   for "_i" from 1 to 2 do {player addItemToUniform "ACE_EarPlugs";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
   player addVest "V_Police_heavy";
-  for "_i" from 1 to 9 do {player addItemToVest "ACE_30Rnd_556x45_Stanag_M995_AP_mag";};
+  for "_i" from 1 to 9 do {player addItemToVest "30Rnd_556x45_Stanag";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
@@ -137,7 +138,7 @@ _blufor_mg_ass = {
   for "_i" from 1 to 2 do {player addItemToUniform "ACE_EarPlugs";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
   player addVest "V_Police_heavy";
-  for "_i" from 1 to 9 do {player addItemToVest "ACE_30Rnd_556x45_Stanag_M995_AP_mag";};
+  for "_i" from 1 to 9 do {player addItemToVest "30Rnd_556x45_Stanag";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
@@ -179,7 +180,7 @@ _blufor_medic = {
   for "_i" from 1 to 2 do {player addItemToUniform "ACE_EarPlugs";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
   player addVest "V_Police_heavy";
-  for "_i" from 1 to 8 do {player addItemToVest "ACE_30Rnd_556x45_Stanag_M995_AP_mag";};
+  for "_i" from 1 to 8 do {player addItemToVest "30Rnd_556x45_Stanag";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   player addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
@@ -235,7 +236,7 @@ _blufor_smg = {
   comment "Add weapons";
   player addWeapon "SMG_02_F";
   player addPrimaryWeaponItem "muzzle_snds_L";
-  player addPrimaryWeaponItem "FHQ_optic_MicroCCO_low";
+  player addPrimaryWeaponItem "FHQ_optic_MicroCCO";
   player addWeapon "rhsusf_weap_m9";
   player addWeapon "Binocular";
 

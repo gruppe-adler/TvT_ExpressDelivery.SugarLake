@@ -7,7 +7,7 @@ _heightForLoaded = -30;
 
 _objectivePos = getPosASL theobjective;
 _inVehicle = ((_objectivePos select 2) < _heightForLoaded);
-if (_inVehicle) then {OBJECTIVE_MARKER_HIDDEN = false; publicVariable "OBEJCTIVE_MARKER_HIDDEN"};
+if (_inVehicle) then {OBJECTIVE_MARKER_HIDDEN = false; publicVariable "OBJECTIVE_MARKER_HIDDEN"};
 
 diag_log format ["theobjective in vehicle? - %1", _inVehicle];
 

@@ -8,11 +8,10 @@ class Header
 
 author = "McDiod & Fridelcastro für Gruppe Adler";
 overviewText = "";
-onLoadName = "Express Delivery";
+onLoadName = "Sumpfpost";
 loadScreen = "pic\loadscreen.jpg";
 
-respawnDelay = 999999;
-respawn = 3;
+respawnDelay = 9999999;
 
 enableDebugConsole = 1;
 disabledAI = 0;

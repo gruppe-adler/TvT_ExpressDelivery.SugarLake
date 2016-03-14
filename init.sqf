@@ -50,6 +50,7 @@ if (isServer) then {
   [] execVM "server\startGame.sqf";
   [] execVM "server\dropoffTriggers.sqf";
   [] execVM "server\detectAllDead.sqf";
+  [] execVM "server\detectObjectiveDead.sqf";
 
   //Groups
   ["Initialize"] call BIS_fnc_dynamicGroups;
