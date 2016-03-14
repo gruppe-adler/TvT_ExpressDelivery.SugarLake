@@ -23,7 +23,10 @@ markerAnimation = {
   _lineBreak = parseText "<br />";
 
 	playSound "beep";
-	hint composeText [_rule,_headline,_lineBreak,_rule];
+	if (time > 30) then {
+			hint composeText [_rule,_headline,_lineBreak,_rule];
+	};
+
   /*
 	if (playerSide == west) then {
 		cutRsc ["gui_intel_paper_us","PLAIN",0];
