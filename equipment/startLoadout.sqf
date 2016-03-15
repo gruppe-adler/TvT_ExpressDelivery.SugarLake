@@ -78,7 +78,7 @@ if (str side player == "EAST") then {
 	#include "opforLoadouts.sqf";
 	switch (roleDescription player) do
 	{
-		case "Der Boss (Squad Leader)" : {call _opfor_squadlead};
+		case "Boss (Squad Leader)" : {call _opfor_squadlead};
 		case "Oleg (MG)" : {call _opfor_mg};
 		case "Pyotr (MG Ass.)" : {call _opfor_mg_ass};
 		case "Dr. Yeryomin (Medic)" : {call _opfor_medic_1};
@@ -105,7 +105,7 @@ if (str side player == "GUER") then {
 		case "Ahmed (Medic)" : {call _indep_medic_2};
 		case "Karim (Rifleman)" : {call _indep_rifleman_1};
 		case "Hatip (Rifleman)" : {call _indep_rifleman_2};
-		case "Aynur (Rifleman)" : {call _indep_rifleman_3};
+		case "Aynur (IED Specialist)" : {call _indep_explosives};
 		case "Ibrahim (Marksman)" : {call _indep_marksman};
 		default {call _empty};
 	};

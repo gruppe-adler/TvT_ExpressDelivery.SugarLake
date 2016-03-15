@@ -145,6 +145,43 @@ _opfor_medic_1 = {
 	removeGoggles player;
 
 	comment "Add containers";
+	player forceAddUniform "U_MilitaryCoat_D";
+	player addItemToUniform "FirstAidKit";
+	for "_i" from 1 to 30 do {player addItemToUniform "ACE_fieldDressing";};
+	for "_i" from 1 to 2 do {player addItemToUniform "ACE_EarPlugs";};
+	for "_i" from 1 to 8 do {player addItemToUniform "ACE_epinephrine";};
+	for "_i" from 1 to 15 do {player addItemToUniform "ACE_morphine";};
+	player addVest "V_Vest_light_Invisible";
+	for "_i" from 1 to 3 do {player addItemToVest "rhs_mag_rdg2_white";};
+	for "_i" from 1 to 6 do {player addItemToVest "rhs_30Rnd_545x39_AK";};
+	player addHeadgear "H_Hat_brown";
+
+	comment "Add weapons";
+	player addWeapon "Auto545x39_AKS74U";
+	player addWeapon "Binocular";
+
+	comment "Add items";
+	player linkItem "ItemMap";
+	player linkItem "ItemCompass";
+	player linkItem "ItemWatch";
+	player linkItem "tf_fadak";
+	player linkItem "ItemGPS";
+};
+
+_opfor_medic_2 = {
+	comment "Exported from Arsenal by McDiod";
+
+	comment "Remove existing items";
+	removeAllWeapons player;
+	removeAllItems player;
+	removeAllAssignedItems player;
+	removeUniform player;
+	removeVest player;
+	removeBackpack player;
+	removeHeadgear player;
+	removeGoggles player;
+
+	comment "Add containers";
 	player forceAddUniform "U_MilitaryCoat_A";
 	player addItemToUniform "FirstAidKit";
 	for "_i" from 1 to 30 do {player addItemToUniform "ACE_fieldDressing";};
@@ -172,43 +209,6 @@ _opfor_medic_1 = {
 	comment "Set identity";
 	player setFace "RHS_WhiteHead_11";
 	player setSpeaker "RHS_Male04RUS";
-};
-
-_opfor_medic_2 = {
-	comment "Exported from Arsenal by McDiod";
-
-	comment "Remove existing items";
-	removeAllWeapons player;
-	removeAllItems player;
-	removeAllAssignedItems player;
-	removeUniform player;
-	removeVest player;
-	removeBackpack player;
-	removeHeadgear player;
-	removeGoggles player;
-
-	comment "Add containers";
-	player forceAddUniform "U_MilitaryCoat_D";
-	player addItemToUniform "FirstAidKit";
-	for "_i" from 1 to 30 do {player addItemToUniform "ACE_fieldDressing";};
-	for "_i" from 1 to 2 do {player addItemToUniform "ACE_EarPlugs";};
-	for "_i" from 1 to 8 do {player addItemToUniform "ACE_epinephrine";};
-	for "_i" from 1 to 15 do {player addItemToUniform "ACE_morphine";};
-	player addVest "V_Vest_light_Invisible";
-	for "_i" from 1 to 3 do {player addItemToVest "rhs_mag_rdg2_white";};
-	for "_i" from 1 to 6 do {player addItemToVest "rhs_30Rnd_545x39_AK";};
-	player addHeadgear "H_Hat_brown";
-
-	comment "Add weapons";
-	player addWeapon "Auto545x39_AKS74U";
-	player addWeapon "Binocular";
-
-	comment "Add items";
-	player linkItem "ItemMap";
-	player linkItem "ItemCompass";
-	player linkItem "ItemWatch";
-	player linkItem "tf_fadak";
-	player linkItem "ItemGPS";
 };
 
 _opfor_rifleman_1 = {
@@ -409,8 +409,4 @@ _opfor_explosive = {
 	player linkItem "ItemWatch";
 	player linkItem "tf_fadak";
 	player linkItem "ItemGPS";
-
-	comment "Set identity";
-	player setFace "COREV_AsianHead_A3_07";
-	player setSpeaker "RHS_Male02RUS";
 };

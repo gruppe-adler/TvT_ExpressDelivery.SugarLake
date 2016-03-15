@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2153.6404,15.541417,1478.1772};
-		dir[]={-0.85178018,-0.47821042,-0.2139952};
-		up[]={-0.46379909,0.87824297,-0.1165213};
-		aside[]={-0.2436613,4.2433385e-008,0.96986276};
+		pos[]={7061.2212,4.7785368,4661.6812};
+		dir[]={0.88224632,-0.36851099,-0.29299966};
+		up[]={0.34973347,0.92962247,-0.11614844};
+		aside[]={-0.31518131,-2.302113e-007,-0.9490366};
 	};
 };
 binarizationWanted=0;
@@ -1417,7 +1417,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Aynur (Rifleman)";
+						description="Aynur (IED Specialist)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -1440,7 +1440,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=4;
+									items=5;
 									class Item0
 									{
 										name="FirstAidKit";
@@ -1460,6 +1460,11 @@ class Mission
 									{
 										name="ACE_morphine";
 										count=5;
+									};
+									class Item4
+									{
+										name="ACE_Cellphone";
+										count=1;
 									};
 								};
 							};
@@ -1490,6 +1495,21 @@ class Mission
 									};
 								};
 							};
+							class backpack
+							{
+								typeName="B_RucksackBag_B";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="IEDLandSmall_Remote_Mag";
+										count=3;
+										ammoLeft=1;
+									};
+								};
+							};
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
@@ -1504,25 +1524,6 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
 						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
@@ -1541,7 +1542,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute1
+						{
+							property="Revo_unitPos";
+							expression="_this setUnitPos _value";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="auto";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item2
@@ -3612,14 +3651,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1465.1191,5.1441083,7024.1533};
+						position[]={1465.119,5.1445518,7024.1538};
 						angles[]={0,2.291949,0};
 					};
 					side="East";
 					flags=3;
 					class Attributes
 					{
-						description="Der Boss (Squad Leader)";
+						description="Boss (Squad Leader)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -3732,6 +3771,25 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="Revo_unitPos";
+							expression="_this setUnitPos _value";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="auto";
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -3749,7 +3807,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
@@ -3768,7 +3826,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="unitName";
 							expression="_this setname _value;";
@@ -3787,7 +3845,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="face";
 							expression="_this setface _value;";
@@ -3806,7 +3864,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=5;
+						nAttributes=6;
 					};
 				};
 				class Item1
@@ -4228,14 +4286,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1461.1152,5.1441083,7025.2969};
-						angles[]={0,2.0328228,0};
+						position[]={1461.115,5.1438994,7025.2969};
+						angles[]={0,2.03282,0};
 					};
 					side="East";
 					flags=1;
 					class Attributes
 					{
-						description="Dr. Yeryomin (Medic)";
+						description="Dr. Pila (Medic)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -4342,6 +4400,25 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="Revo_unitPos";
+							expression="_this setUnitPos _value";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="auto";
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -4359,7 +4436,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
@@ -4378,7 +4455,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="unitName";
 							expression="_this setname _value;";
@@ -4397,7 +4474,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=5;
 					};
 				};
 				class Item4
@@ -5341,14 +5418,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1469.6101,5.1441083,7031.8296};
-						angles[]={0,2.5465989,0};
+						position[]={1469.61,5.1443172,7031.8296};
+						angles[]={0,2.5465925,0};
 					};
 					side="East";
 					flags=1;
 					class Attributes
 					{
-						description="Dr. Pila (Medic)";
+						description="Dr. Yeryomin (Medic)";
 						isPlayable=1;
 						class Inventory
 						{
@@ -5453,6 +5530,25 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="Revo_unitPos";
+							expression="_this setUnitPos _value";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="auto";
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="speaker";
 							expression="_this setspeaker _value;";
 							class Value
@@ -5470,7 +5566,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="ace_isSurrendered";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
@@ -5489,7 +5585,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						nAttributes=4;
 					};
 				};
 			};

@@ -315,42 +315,45 @@ _indep_rifleman_2 = {
   player linkItem "ItemGPS";
 };
 
-_indep_rifleman_3 = {
+_indep_explosives = {
   comment "Exported from Arsenal by McDiod";
 
   comment "Remove existing items";
-  removeAllWeapons player;
-  removeAllItems player;
-  removeAllAssignedItems player;
-  removeUniform player;
-  removeVest player;
-  removeBackpack player;
-  removeHeadgear player;
-  removeGoggles player;
+  removeAllWeapons this;
+  removeAllItems this;
+  removeAllAssignedItems this;
+  removeUniform this;
+  removeVest this;
+  removeBackpack this;
+  removeHeadgear this;
+  removeGoggles this;
 
   comment "Add containers";
-  player forceAddUniform "U_TKLocalCombat_E";
-  player addItemToUniform "FirstAidKit";
-  for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
-  for "_i" from 1 to 2 do {player addItemToUniform "ACE_EarPlugs";};
-  for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
-  player addVest "V_ChestRig_light_A";
-  for "_i" from 1 to 2 do {player addItemToVest "rhs_mag_rdg2_white";};
-  for "_i" from 1 to 2 do {player addItemToVest "rhs_mag_rgo";};
-  for "_i" from 1 to 9 do {player addItemToVest "rhs_30Rnd_762x39mm";};
-  player addHeadgear "H_Hat_Pakol";
-  player addGoggles "G_Bandanna_tan";
+  this forceAddUniform "U_TKLocalCombat_E";
+  this addItemToUniform "FirstAidKit";
+  for "_i" from 1 to 10 do {this addItemToUniform "ACE_fieldDressing";};
+  for "_i" from 1 to 2 do {this addItemToUniform "ACE_EarPlugs";};
+  for "_i" from 1 to 5 do {this addItemToUniform "ACE_morphine";};
+  this addItemToUniform "ACE_Cellphone";
+  this addVest "V_ChestRig_light_A";
+  for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_white";};
+  for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgo";};
+  for "_i" from 1 to 9 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+  this addBackpack "B_RucksackBag_B";
+  for "_i" from 1 to 3 do {this addItemToBackpack "IEDLandSmall_Remote_Mag";};
+  this addHeadgear "H_Hat_Pakol";
+  this addGoggles "G_Bandanna_tan";
 
   comment "Add weapons";
-  player addWeapon "rhs_weap_akms";
-  player addWeapon "Binocular";
+  this addWeapon "rhs_weap_akms";
+  this addWeapon "Binocular";
 
   comment "Add items";
-  player linkItem "ItemMap";
-  player linkItem "ItemCompass";
-  player linkItem "ItemWatch";
-  player linkItem "tf_pnr1000a";
-  player linkItem "ItemGPS";
+  this linkItem "ItemMap";
+  this linkItem "ItemCompass";
+  this linkItem "ItemWatch";
+  this linkItem "tf_pnr1000a";
+  this linkItem "ItemGPS";
 };
 
 _indep_marksman = {
