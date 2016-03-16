@@ -1,10 +1,10 @@
 _winningTeam = _this select 0;
-
+private ["_headline"];
 
 if (hasInterface)then {
   //parse static text
-  if (_winningTeam == "Niemand") then {
-    _headline = parseText format ["<t align='center'>Der Koffer wurde zerstört! Mission fehlgeschlagen.</t>"];
+  if (_winningTeam == "zerstört" || _winningTeam == "abgeliefert") then {
+    _headline = parseText format ["<t align='center'>Der Koffer wurde %1! Mission fehlgeschlagen.</t>", _winningTeam];
   } else {
     _headline = parseText format ["<t align='center'>Team %1 hat gewonnen!</t>", _winningTeam];
   };

@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=1158;
+		nextID=1181;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7504.5596,157.60382,3612.5808};
-		dir[]={0.60304618,-0.61174518,0.51220053};
-		up[]={0.46631408,0.79095727,0.39606401};
-		aside[]={0.6474396,6.4977212e-007,-0.76227468};
+		pos[]={5958.6885,26.940001,5820.6855};
+		dir[]={-0.8218866,-0.22740194,0.52229536};
+		up[]={-0.19192751,0.97380078,0.12196672};
+		aside[]={0.53634673,7.7765435e-008,0.84399807};
 	};
 };
 binarizationWanted=0;
@@ -71,7 +71,10 @@ addons[]=
 	"A3_Structures_F_Households_Stone_Big",
 	"A3_Structures_F_Households_Stone_Shed",
 	"A3_Structures_F_Ind_ConcreteMixingPlant",
-	"COREVLiteLoadouts"
+	"COREVLiteLoadouts",
+	"rds_A2_Civilians",
+	"A3_Soft_F_Car",
+	"A3_Soft_F_TruckHeavy"
 };
 randomSeed=6563493;
 class ScenarioData
@@ -128,7 +131,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=349;
+		items=367;
 		class Item0
 		{
 			dataType="Logic";
@@ -6563,7 +6566,9 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				lock="LOCKED";
 				init="null = [this] execvm ""helpers\clearbox.sqf"";";
+				name="truck_prop_2";
 			};
 			id=364;
 			type="RHS_Ural_Civ_01";
@@ -6602,7 +6607,9 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				lock="LOCKED";
 				init="null = [this] execvm ""helpers\clearbox.sqf"";";
+				name="truck_prop_1";
 			};
 			id=368;
 			type="RHS_Ural_Open_Civ_03";
@@ -6672,6 +6679,7 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKED";
+				init="null = [this] execvm ""helpers\clearbox.sqf"";";
 			};
 			id=372;
 			type="RHS_Mi8amt_civilian";
@@ -12887,6 +12895,350 @@ class Mission
 			};
 			id=1157;
 			type="Bush_Cane1";
+		};
+		class Item349
+		{
+			dataType="Trigger";
+			position[]={3657.1331,1.9400001,5563.083};
+			angle=-0.3649829;
+			class Attributes
+			{
+				condition="((theobjective in thisList) && (thecourier in thisList))";
+				onActivation="hint ""asd""; if (isServer) then {[[""abgeliefert""], ""helpers\endMission.sqf""] remoteExec [""execVM"",0,false]};";
+				sizeA=45;
+				sizeB=100;
+				timeout[]={30,30,30};
+				interuptable=1;
+				repeatable=1;
+				activationBy="ANY";
+				isRectangle=1;
+			};
+			id=1158;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item350
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3643.946,7.7984705,7427.2808};
+				angles[]={0,1.2165643,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1159;
+			type="RDS_Van_01_fuel_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[2]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item351
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3641.7175,7.8121214,7433.5659};
+				angles[]={0,1.2521898,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1161;
+			type="RDS_Van_01_transport_F";
+		};
+		class Item352
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3693.2102,8.1400671,7405.0498};
+				angles[]={0,4.3450031,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1163;
+			type="RHS_Ural_Civ_02";
+		};
+		class Item353
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4421.3872,4.1417627,5651.4146};
+				angles[]={0,2.8252397,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1165;
+			type="RHS_Ural_Civ_01";
+		};
+		class Item354
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4434.7646,2.1180215,5644.5972};
+				angles[]={0,5.9069276,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1166;
+			type="RHS_Ural_Open_Civ_03";
+		};
+		class Item355
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4469.564,3.3901243,5686.9985};
+				angles[]={0,5.7963915,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1167;
+			type="C_Hatchback_01_F";
+		};
+		class Item356
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4500.1826,3.4350719,5673.0278};
+				angles[]={0,5.8732619,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1168;
+			type="RDS_Gaz24_Civ_02";
+		};
+		class Item357
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4373.0264,3.5350807,5739.373};
+				angles[]={0,1.2256051,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1169;
+			type="RDS_S1203_Civ_01";
+		};
+		class Item358
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4387.7236,3.4525256,5724.3301};
+				angles[]={0,4.3701086,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1170;
+			type="RDS_Lada_Civ_03";
+		};
+		class Item359
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4376.0161,3.4525485,5780.5942};
+				angles[]={0,1.1968104,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1172;
+			type="RDS_Lada_Civ_02";
+		};
+		class Item360
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4348.9751,3.829783,5770.3472};
+				angles[]={0,2.7936542,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1173;
+			type="RDS_Ikarus_Civ_01";
+		};
+		class Item361
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5581.4858,4.7063026,6681.3867};
+				angles[]={6.2757244,4.1855149,6.2719445};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="thetruckl";
+			};
+			id=1175;
+			type="I_Truck_02_transport_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item362
+		{
+			dataType="Trigger";
+			position[]={5592.7085,-1.7312355e-005,6694.4951};
+			class Attributes
+			{
+				condition="thecourier in thisList";
+				onActivation="if (isServer) then {thetruck lock false}";
+				activationBy="ANY";
+			};
+			id=1176;
+			type="EmptyDetectorAreaR250";
+		};
+		class Item363
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5378.207,4.7700157,6801.5957};
+			};
+			side="Empty";
+			class Attributes
+			{
+				lock="LOCKED";
+				init="null = [this] execvm ""helpers\clearbox.sqf"";";
+			};
+			id=1177;
+			type="RHS_Mi8amt_civilian";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[8]],[[""rhs_30Rnd_545x39_7N10_AK"",""rhs_mag_rgd5"",""rhs_mag_nspn_red"",""rhs_mag_rdg2_white""],[10,10,10,4]],[[""ToolKit""],[1]],[[""B_Parachute""],[8]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item364
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5450.9067,4.3195801,6541.7046};
+				angles[]={0,2.4650829,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1178;
+			type="RHS_Civ_Truck_02_transport_F";
+		};
+		class Item365
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5444.2207,4.3196049,6578.7148};
+				angles[]={0,5.6396284,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1179;
+			type="RHS_Civ_Truck_02_covered_F";
+		};
+		class Item366
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5466.7227,3.4329472,6554.7158};
+				angles[]={0,2.4203055,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1180;
+			type="RDS_Gaz24_Civ_01";
 		};
 	};
 };

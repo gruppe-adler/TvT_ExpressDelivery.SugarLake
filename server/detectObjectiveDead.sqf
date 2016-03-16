@@ -10,7 +10,7 @@ diag_log "detectObjectiveDead.sqf starting...";
 [] spawn {
   while {true} do {
     if (isNull theobjective) then {
-      [["Niemand"], "helpers\endMission.sqf"] remoteExec ["execVM",0,false];
+      [["zerstört"], "helpers\endMission.sqf"] remoteExec ["execVM",0,false];
     };
 
     sleep 10;

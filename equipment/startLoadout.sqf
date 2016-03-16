@@ -7,37 +7,37 @@ _civ_derkurier = {
 	comment "Exported from Arsenal by McDiod";
 
 	comment "Remove existing items";
-	removeAllWeapons this;
-	removeAllItems this;
-	removeAllAssignedItems this;
-	removeUniform this;
-	removeVest this;
-	removeBackpack this;
-	removeHeadgear this;
-	removeGoggles this;
+	removeAllWeapons player;
+	removeAllItems player;
+	removeAllAssignedItems player;
+	removeUniform player;
+	removeVest player;
+	removeBackpack player;
+	removeHeadgear player;
+	removeGoggles player;
 
 	comment "Add containers";
-	this forceAddUniform "U_C_HunterBody_grn";
-	this addItemToUniform "ACE_EarPlugs";
-	for "_i" from 1 to 20 do {this addItemToUniform "ACE_fieldDressing";};
-	for "_i" from 1 to 4 do {this addItemToUniform "ACE_morphine";};
-	this addVest "V_Vest_light_Invisible";
-	for "_i" from 1 to 6 do {this addItemToVest "rhs_30Rnd_545x39_AK";};
-	this addHeadgear "H_Booniehat_grn";
-	this addGoggles "G_Spectacles_Tinted";
+	player forceAddUniform "U_C_HunterBody_grn";
+	player addItemToUniform "ACE_EarPlugs";
+	for "_i" from 1 to 20 do {player addItemToUniform "ACE_fieldDressing";};
+	for "_i" from 1 to 4 do {player addItemToUniform "ACE_morphine";};
+	player addVest "V_Vest_light_Invisible";
+	for "_i" from 1 to 6 do {player addItemToVest "rhs_30Rnd_545x39_AK";};
+	player addHeadgear "H_Booniehat_grn";
+	player addGoggles "G_Spectacles_Tinted";
 
 	comment "Add weapons";
-	this addWeapon "Auto545x39_AKS74U";
+	player addWeapon "Auto545x39_AKS74U";
 
 	comment "Add items";
-	this linkItem "ItemMap";
-	this linkItem "ItemCompass";
-	this linkItem "ItemWatch";
-	this linkItem "ItemGPS";
+	player linkItem "ItemMap";
+	player linkItem "ItemCompass";
+	player linkItem "ItemWatch";
+	player linkItem "ItemGPS";
 
 	comment "Set identity";
-	this setFace "GreekHead_A3_04";
-	this setSpeaker "Male06GRE";
+	player setFace "GreekHead_A3_04";
+	player setSpeaker "Male06GRE";
 };
 
 //DEFAULT EQUIPMENT ============================================================
