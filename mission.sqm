@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=1073;
+		nextID=1158;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7785.7549,125.80547,3642.3923};
-		dir[]={0.29172906,-0.69709265,0.65512031};
-		up[]={0.28358951,0.71690702,0.63684106};
-		aside[]={0.91361541,-1.1851662e-006,-0.40683305};
+		pos[]={7504.5596,157.60382,3612.5808};
+		dir[]={0.60304618,-0.61174518,0.51220053};
+		up[]={0.46631408,0.79095727,0.39606401};
+		aside[]={0.6474396,6.4977212e-007,-0.76227468};
 	};
 };
 binarizationWanted=0;
@@ -128,7 +128,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=283;
+		items=349;
 		class Item0
 		{
 			dataType="Logic";
@@ -11790,68 +11790,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7985.8042,8.7588387,3773.4729};
-				angles[]={0,5.3268719,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-			};
-			id=1061;
-			type="Tree_Pine_2";
-		};
-		class Item278
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={7998.1021,8.7588634,3766.27};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-			};
-			id=1062;
-			type="Tree_Pine_2";
-		};
-		class Item279
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={8001.8306,8.7587357,3789.8291};
-				angles[]={0,4.8397732,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-			};
-			id=1063;
-			type="Tree_Pine_2";
-		};
-		class Item280
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={7997.6055,7.899869,3777.54};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-			};
-			id=1064;
-			type="Tree_Pine_3";
-		};
-		class Item281
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={8001.9517,3.5403197,3786.1172};
 			};
 			side="Empty";
@@ -11862,7 +11800,7 @@ class Mission
 			id=1071;
 			type="Tree_Ficus_1";
 		};
-		class Item282
+		class Item278
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11877,6 +11815,1078 @@ class Mission
 			};
 			id=1072;
 			type="Tree_Ficus_1";
+		};
+		class Item279
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7993.0703,4.9154768,3776.2607};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1075;
+			type="Tree_Ficus_2";
+		};
+		class Item280
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8001.251,11.898141,3781.4434};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1076;
+			type="Tree_Fraxinus";
+		};
+		class Item281
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7989.2661,11.898301,3764.0286};
+				angles[]={0,2.1508317,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1078;
+			type="Tree_Fraxinus";
+		};
+		class Item282
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7996.4526,1.2228103,3773.2725};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1086;
+			type="Rock_BluntStone1";
+		};
+		class Item283
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7997.5679,1.2227702,3786.9236};
+				angles[]={0,2.3242412,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1087;
+			type="Rock_BluntStone1";
+		};
+		class Item284
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7867.4502,1.2266288,3791.0969};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1088;
+			type="Rock_BluntStone1";
+		};
+		class Item285
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7905.8604,1.2265449,3877.5793};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1089;
+			type="Rock_BluntStone1";
+		};
+		class Item286
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7904.4863,1.2265983,3882.3809};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1090;
+			type="Rock_BluntStone1_LC";
+		};
+		class Item287
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7908.6157,1.3889108,3878.2859};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1091;
+			type="Rock_BluntStone2_LC";
+		};
+		class Item288
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7906.3408,1.2442465,3885.0078};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1092;
+			type="Rock_BluntStone3";
+		};
+		class Item289
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7910.2822,1.2442532,3868.9053};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1093;
+			type="Rock_BluntStone3_LC";
+		};
+		class Item290
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7852.9463,1.2441988,3950.3889};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1094;
+			type="Rock_BluntStone3";
+		};
+		class Item291
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7763.8062,1.2265906,3912.657};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1095;
+			type="Rock_BluntStone1";
+		};
+		class Item292
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7850.084,1.2265449,3850.2776};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1096;
+			type="Rock_BluntStone1";
+		};
+		class Item293
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7948.3989,1.2265754,3867.2576};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1097;
+			type="Rock_BluntStone1";
+		};
+		class Item294
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7879.4551,1.226583,3991.1348};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1098;
+			type="Rock_BluntStone1";
+		};
+		class Item295
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7761.3286,0.93879485,3897.2993};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1099;
+			type="Rock_BluntStone_Erosion";
+		};
+		class Item296
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7602.9097,1.8400924,3846.3931};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1100;
+			type="Rock_BluntRock_Apart";
+		};
+		class Item297
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7597.3643,1.3889041,3838.9209};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1101;
+			type="Rock_BluntStone2_LC";
+		};
+		class Item298
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7629.5073,3.9490027,3835.6763};
+				angles[]={0,3.2210286,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1102;
+			type="Bush_Cane2";
+		};
+		class Item299
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7626.9399,3.9489493,3826.4895};
+				angles[]={0,4.7677813,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1103;
+			type="Bush_Cane2";
+		};
+		class Item300
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7634.0234,3.9490523,3878.7837};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1104;
+			type="Bush_Cane2";
+		};
+		class Item301
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7630.6313,3.9490027,3877.9524};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1105;
+			type="Bush_Cane2";
+		};
+		class Item302
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7628.249,3.9490104,3871.9824};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1106;
+			type="Bush_Cane2";
+		};
+		class Item303
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7619.5713,3.9490027,3874.6919};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1107;
+			type="Bush_Cane2";
+		};
+		class Item304
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7624.1074,3.9489989,3864.157};
+				angles[]={0,5.3832932,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1108;
+			type="Bush_Cane2";
+		};
+		class Item305
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7552.3428,4.0663428,3847.3928};
+				angles[]={0,2.3276973,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1109;
+			type="Bush_Cane2";
+		};
+		class Item306
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7622.7671,1.0244784,3830.7183};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1110;
+			type="Bush_Cane1";
+		};
+		class Item307
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7617.8062,1.0244784,3869.1833};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1111;
+			type="Bush_Cane1";
+		};
+		class Item308
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7567.8687,1.0244861,3832.6724};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1112;
+			type="Bush_Cane1";
+		};
+		class Item309
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7560.4478,3.9489875,3867.312};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1113;
+			type="Bush_Cane2";
+		};
+		class Item310
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7552.4189,4.0640464,3873.9712};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1114;
+			type="Bush_Cane2";
+		};
+		class Item311
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7560.5352,3.9490104,3859.4202};
+				angles[]={0,1.1442605,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1115;
+			type="Bush_Cane2";
+		};
+		class Item312
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7551.9844,3.2552848,3863.5552};
+				angles[]={0,5.1812296,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1116;
+			type="Bush_Cane2";
+		};
+		class Item313
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7542.5742,3.9992347,3817.9963};
+				angles[]={0,2.8272059,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1117;
+			type="Bush_Cane2";
+		};
+		class Item314
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7549.0972,3.9669776,3802.2471};
+				angles[]={0,1.5585779,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1118;
+			type="Bush_Cane2";
+		};
+		class Item315
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7542.5781,3.9256415,3804.3032};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1119;
+			type="Bush_Cane2";
+		};
+		class Item316
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7598.127,4.0625854,3941.6038};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1120;
+			type="Bush_Cane2";
+		};
+		class Item317
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7587.7202,1.0245204,3941.7578};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1121;
+			type="Bush_Cane1";
+		};
+		class Item318
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7591.0703,1.0245051,3935.7839};
+				angles[]={0,4.6921558,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1122;
+			type="Bush_Cane1";
+		};
+		class Item319
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7588.5938,1.0309176,3948.0581};
+				angles[]={0,5.0144777,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1123;
+			type="Bush_Cane1";
+		};
+		class Item320
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7574.9312,1.0547328,3961.0117};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1124;
+			type="Bush_Cane1";
+		};
+		class Item321
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7639.2949,-5.2769527,3800.8005};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1126;
+			type="Rock_BluntRock_Monolith";
+		};
+		class Item322
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7731.5054,-3.5614271,3876.0767};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1127;
+			type="Rock_BluntRock_Spike";
+		};
+		class Item323
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7650.0259,-21.161787,3682.2214};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1128;
+			type="Rock_BluntRock_WallV";
+		};
+		class Item324
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7652.5439,1.1092029,3663.7092};
+				angles[]={0,4.9089789,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1129;
+			type="Bush_Cane1";
+		};
+		class Item325
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7661.1162,1.0245166,3676.2932};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1130;
+			type="Bush_Cane1";
+		};
+		class Item326
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7644.2202,1.024509,3690.7048};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1131;
+			type="Bush_Cane1";
+		};
+		class Item327
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7641.7822,1.0245852,3686.1716};
+				angles[]={0,3.7038352,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1132;
+			type="Bush_Cane1";
+		};
+		class Item328
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7974.3271,-4.1257629,3913.1704};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1134;
+			type="Rock_BluntRock_Monolith";
+		};
+		class Item329
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7981.5459,1.3889384,3900.0872};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1135;
+			type="Rock_BluntStone2";
+		};
+		class Item330
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7963.7085,1.2266135,3916.4988};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1136;
+			type="Rock_BluntStone1";
+		};
+		class Item331
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7982.4692,1.2442904,3918.0027};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1137;
+			type="Rock_BluntStone3";
+		};
+		class Item332
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7974.7676,1.0244727,3898.5332};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1138;
+			type="Bush_Cane1";
+		};
+		class Item333
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7965.2437,1.0245109,3912.8367};
+				angles[]={0,1.7612283,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1139;
+			type="Bush_Cane1";
+		};
+		class Item334
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7460.3477,3.9517493,3675.4753};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1140;
+			type="Bush_Cane2";
+		};
+		class Item335
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7479.5278,4.0264716,3790.9978};
+				angles[]={0,1.9640615,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1141;
+			type="Bush_Cane2";
+		};
+		class Item336
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7476.3613,4.0406394,3810.5046};
+				angles[]={0,3.4499722,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1142;
+			type="Bush_Cane2";
+		};
+		class Item337
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7457.4985,4.0316749,3797.6094};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1143;
+			type="Bush_Cane2";
+		};
+		class Item338
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7446.6636,3.7299552,3787.5515};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1144;
+			type="Bush_Cane2";
+		};
+		class Item339
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7454.7925,3.7228522,3785.9233};
+				angles[]={0,0.14088096,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1145;
+			type="Bush_Cane2";
+		};
+		class Item340
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7458.4702,1.1650119,3667.645};
+				angles[]={0,4.5608029,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1146;
+			type="Bush_Cane1";
+		};
+		class Item341
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7451.1255,1.0245013,3678.572};
+				angles[]={0,1.0636526,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1147;
+			type="Bush_Cane1";
+		};
+		class Item342
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7425.2217,1.0244555,3688.8005};
+				angles[]={0,3.6785207,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1148;
+			type="Bush_Cane1";
+		};
+		class Item343
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7421.1396,1.0245395,3688.4023};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1149;
+			type="Bush_Cane1";
+		};
+		class Item344
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7404.5059,1.2162051,3715.3638};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1151;
+			type="Bush_Cane1";
+		};
+		class Item345
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7428.5142,1.0245166,3684.0845};
+				angles[]={0,3.4072323,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1152;
+			type="Bush_Cane1";
+		};
+		class Item346
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7440.3555,1.2266097,3702.3442};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1153;
+			type="Rock_BluntStone1";
+		};
+		class Item347
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7439.7549,-5.7240629,3706.5686};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1156;
+			type="Rock_BluntRock_Spike";
+		};
+		class Item348
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7443.0479,1.0244975,3703.3433};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=1157;
+			type="Bush_Cane1";
 		};
 	};
 };
