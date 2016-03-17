@@ -19,19 +19,25 @@ diag_log "Running startGame.sqf";
 [[], "player\safeStartHint.sqf"] remoteExec ["execVM",0,false];
 
 //wait start delays and start game for each team
-sleep (STARTDELAYS select 0);
-[STARTORDER select 0] execVM "server\startTeam.sqf";
-diag_log format ["Starting game for %1.", STARTORDER select 0];
+[] spawn {
+  sleep (STARTDELAYS select 0);
+  [STARTORDER select 0] execVM "server\startTeam.sqf";
+  diag_log format ["Starting game for %1.", STARTORDER select 0];
+};
 
-sleep (STARTDELAYS select 1) - (STARTDELAYS select 0);
-[STARTORDER select 1] execVM "server\startTeam.sqf";
-diag_log format ["Starting game for %1.", STARTORDER select 1];
+[] spawn {
+  sleep (STARTDELAYS select 1);
+  [STARTORDER select 1] execVM "server\startTeam.sqf";
+  diag_log format ["Starting game for %1.", STARTORDER select 1];
+};
 
-sleep (STARTDELAYS select 2) - (STARTDELAYS select 1) - (STARTDELAYS select 0);
-[STARTORDER select 2] execVM "server\startTeam.sqf";
-diag_log format ["Starting game for %1.", STARTORDER select 2];
+[] spawn {
+  sleep (STARTDELAYS select 2);
+  [STARTORDER select 2] execVM "server\startTeam.sqf";
+  diag_log format ["Starting game for %1.", STARTORDER select 2];
+};
 
-
+sleep (STARTDELAYS select ((count STARTDELAYS)-1));
 ALLTEAMSSTARTED = true;
 publicVariable "ALLTEAMSSTARTED";
 diag_log "Game has started for all teams.";
