@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=1274;
+		nextID=1284;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4227.3984,26.961126,3034.5532};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={3111.8459,84.467224,1926.4775};
+		dir[]={0.047105599,-0.37116399,0.92738265};
+		up[]={0.018830601,0.92856419,0.37069994};
+		aside[]={0.9987213,-9.440555e-008,-0.050728451};
 	};
 };
 binarizationWanted=0;
@@ -143,7 +143,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=415;
+		items=421;
 		class Item0
 		{
 			dataType="Logic";
@@ -14767,6 +14767,118 @@ class Mission
 			};
 			id=1273;
 			type="C_Quadbike_01_F";
+		};
+		class Item415
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5446.5625,1.216313,3315.0513};
+				angles[]={0,1.5592675,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1274;
+			type="C_Rubberboat";
+		};
+		class Item416
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5627.4336,1.1995332,3344.8374};
+				angles[]={0,3.6152458,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1275;
+			type="C_Boat_Civil_01_rescue_F";
+		};
+		class Item417
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5485.6572,1.3000162,3490.1934};
+				angles[]={0,3.576889,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1280;
+			type="C_Boat_Civil_01_police_F";
+		};
+		class Item418
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3940.0601,1.5707313,2804.4097};
+				angles[]={6.151453,4.574399,6.1342955};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1281;
+			type="C_Rubberboat";
+		};
+		class Item419
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3027.2581,1.2639198,1985.755};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1282;
+			type="I_Boat_Transport_01_F";
+		};
+		class Item420
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3036.7793,1.2421278,1960.2852};
+				angles[]={0,2.5808904,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1283;
+			type="I_Boat_Transport_01_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[2]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };

@@ -6,6 +6,10 @@
 
 //updated by trigger
 MILBASEUNITS = [];
+waitUntil {!isNil "MILBASETRIGGER"};
+waitUntil {!isNull MILBASETRIGGER};
+
+diag_log "attackBaseInvaders.sqf starting...";
 
 while {true} do {
   MILBASEUNITS = list MILBASETRIGGER;
