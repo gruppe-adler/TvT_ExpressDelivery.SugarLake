@@ -16,10 +16,17 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7101.7739,60.703739,4609.1953};
-		dir[]={0.73991352,-0.61986214,0.26154166};
-		up[]={0.58447438,0.7846638,0.20659953};
-		aside[]={0.33328649,-7.0407987e-007,-0.94288272};
+<<<<<<< HEAD
+		pos[]={5647.54,61.365231,6651.021};
+		dir[]={-0.61365199,-0.77176547,0.16681567};
+		up[]={-0.7447384,0.63590831,0.20244959};
+		aside[]={0.26232228,-3.6158599e-007,0.96498889};
+=======
+		pos[]={7170.3877,9.7531948,4629.2661};
+		dir[]={-0.67922974,-0.69227439,0.24393432};
+		up[]={-0.65157121,0.72158992,0.23399925};
+		aside[]={0.33801514,-8.6752698e-007,0.94119638};
+>>>>>>> origin/master
 	};
 };
 binarizationWanted=0;
@@ -12919,7 +12926,7 @@ class Mission
 			class Attributes
 			{
 				condition="((theobjective in thisList) && (thecourier in thisList))";
-				onActivation="hint ""asd""; if (isServer) then {[[""abgeliefert""], ""helpers\endMission.sqf""] remoteExec [""execVM"",0,false]};";
+				onActivation="if (isServer) then {[[""abgeliefert""], ""helpers\endMission.sqf""] remoteExec [""execVM"",0,false]};";
 				sizeA=45;
 				sizeB=100;
 				timeout[]={30,30,30};
@@ -13130,6 +13137,7 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
+				lock="LOCKED";
 				name="thetruck";
 			};
 			id=1175;
@@ -13161,7 +13169,7 @@ class Mission
 		class Item362
 		{
 			dataType="Trigger";
-			position[]={5592.7085,-1.7312355e-005,6694.4951};
+			position[]={5592.708,-1.168251e-005,6694.4951};
 			class Attributes
 			{
 				condition="thecourier in thisList";
