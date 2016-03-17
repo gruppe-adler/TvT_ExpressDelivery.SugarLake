@@ -51,6 +51,7 @@ if (isServer) then {
   [] execVM "server\dropoffTriggers.sqf";
   [] execVM "server\detectAllDead.sqf";
   [] execVM "server\detectObjectiveDead.sqf";
+  [] execVM "server\attackBaseInvaders.sqf";
 
   //Groups
   ["Initialize"] call BIS_fnc_dynamicGroups;

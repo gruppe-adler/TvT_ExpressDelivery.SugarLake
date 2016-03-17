@@ -7,8 +7,8 @@ _minDist = 100;   //minimum distance between markers
 _mapCenter = [4180.04,4174.98];
 
 //find empty cars and boats
-_playerBoats = [boat_blue_1,boat_blue_2,boat_blue_3,boat_green_1,boat_green_2,boat_green_3,boat_red_1,boat_red_2,boat_red_3,theboat,thetruck,boat_prop_1,truck_prop_1,truck_prop_2];
-_playerCars = [];
+_playerBoats = [boat_blue_1,boat_blue_2,boat_blue_3,boat_green_1,boat_green_2,boat_green_3,boat_red_1,boat_red_2,boat_red_3,theboat,boat_prop_1];
+_playerCars = [thetruck,truck_prop_1,truck_prop_2];
 
 _allCars = nearestObjects [_mapCenter, ["Car"],10000];
 _emptyCars = _allCars - _playerCars;
