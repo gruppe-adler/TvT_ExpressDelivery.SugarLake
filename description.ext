@@ -5,10 +5,9 @@ class Header
   maxPlayers = 31;
 };
 
-
 author = "McDiod & Fridelcastro für Gruppe Adler";
 overviewText = "";
-onLoadName = "Sumpfpost";
+onLoadName = "MONEY IN THE MIST";
 loadScreen = "pic\loadscreen.jpg";
 
 respawnDelay = 9999999;

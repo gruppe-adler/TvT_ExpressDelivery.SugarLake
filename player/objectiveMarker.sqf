@@ -100,6 +100,13 @@ _OBJECTIVE_MARKER_HIDDEN_listener = {
 "OBJECTIVE_MARKER_POS" addPublicVariableEventHandler _OBJECTIVE_MARKER_POS_listener;
 "OBJECTIVE_MARKER_HIDDEN" addPublicVariableEventHandler _OBJECTIVE_MARKER_HIDDEN_listener;
 
+//make sure marker animation runs, if publicVar is received before player is ingame
+if (time < 30 && !OBJECTIVE_MARKER_HIDDEN) then {
+	[] call ensureMarkerAnimation;
+};
+
+
+
 // runs in SP to emulate addPublicVariableEventHandler (which doesnt work in SP)
 if (isServer && hasInterface) then {
 	[_OBJECTIVE_MARKER_HIDDEN_listener, _OBJECTIVE_MARKER_POS_listener] spawn {
