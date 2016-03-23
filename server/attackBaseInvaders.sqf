@@ -4,6 +4,9 @@
 *
 */
 
+//wait until game has started
+waitUntil {ALLTEAMSSTARTED};
+
 //updated by trigger
 MILBASEUNITS = [];
 waitUntil {!isNil "MILBASETRIGGER"};

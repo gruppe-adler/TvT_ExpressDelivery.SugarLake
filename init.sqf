@@ -68,6 +68,7 @@ if (isServer) then {
 if (hasInterface) then {
 
   [] execVM "player\objectiveMarker.sqf";
+  [] execVM "player\briefing.sqf";
 
   //loadout
   [] spawn {
