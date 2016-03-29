@@ -4,7 +4,6 @@
 */
 
 if (!hasInterface) exitWith {};
-if (str side player == "CIV") exitWith {};
 
 _mcd_fnc_safeStartHint = {
 

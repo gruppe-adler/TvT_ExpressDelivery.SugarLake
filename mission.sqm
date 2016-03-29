@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5204.7612,105.06387,2369.1431};
-		dir[]={-0.53954589,-0.29514202,-0.78862113};
-		up[]={-0.16671254,0.95541525,-0.24367706};
-		aside[]={-0.82538664,-6.2189065e-007,0.56469977};
+		pos[]={5611.1079,20.366905,6657.0806};
+		dir[]={-0.97867239,-0.20504211,-0.012704843};
+		up[]={-0.20502561,0.97875237,-0.0026614866};
+		aside[]={-0.012981079,1.5000114e-007,0.99991614};
 	};
 };
 binarizationWanted=0;
@@ -409,7 +409,7 @@ class Mission
 		class Item9
 		{
 			dataType="Marker";
-			position[]={3075.4788,-1,1038.5161};
+			position[]={3785.759,-3.9432585,2009.353};
 			name="marker_4";
 			type="mil_pickup";
 			colorName="ColorCIV";
@@ -13501,12 +13501,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5427.457,3.4613338,2673.4719};
-				angles[]={0.0034004871,3.6172426,0};
+				position[]={5427.4575,3.4613419,2673.4722};
+				angles[]={0.0034033919,3.6172473,0};
 			};
 			side="Empty";
 			class Attributes
 			{
+				name="car_prop_2";
 			};
 			id=1199;
 			type="RDS_Lada_Civ_01";
@@ -13538,7 +13539,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3073.1404,1.7387366,1050.0588};
+						position[]={3792.6794,2.1035662,2030.6224};
 						angles[]={0,2.5314779,0};
 					};
 					side="Civilian";
@@ -13621,7 +13622,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3074.6509,2.9918511,1050.0897};
+				position[]={3794.1475,3.3765774,2031.277};
+				angles[]={0.0016194459,0,0};
 			};
 			side="Empty";
 			class Attributes
@@ -13635,12 +13637,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3068.6045,3.2868533,1053.1151};
-				angles[]={0.00084572798,1.6300507,0};
+				position[]={3791.7361,3.6117697,2035.0323};
+				angles[]={0.0016231562,3.6385753,0};
 			};
 			side="Empty";
 			class Attributes
 			{
+				name="car_prop_1";
 			};
 			id=1208;
 			type="RDS_Lada_Civ_03";
