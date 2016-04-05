@@ -58,7 +58,7 @@ mcd_fnc_endGame = {
 
   //RED
   if (_teamName == "Rot") then {
-    _veh = createVehicle ["O_Heli_Light_02_v2_F", [9481.85,1989.82,50], [], 0, "FLY"];
+    _veh = createVehicle ["O_Heli_Light_02_v2_F", [9381.85,1989.82,50], [], 0, "FLY"];
     createVehicleCrew _veh;
     _wp = group _veh addWaypoint [getPos trigger_dropoff_red, 0];
     _wp setWaypointType "MOVE";
@@ -86,7 +86,7 @@ mcd_fnc_endGame = {
 
       //hint every 20%
       if (_firstMessageSent) then {
-        if ((DEFENSE_TIME_GREEN*5) mod _startTime == 0) then {
+        if ((DEFENSE_TIME_GREEN*5) mod _startTime == 0 && DEFENSE_TIME_GREEN > 0) then {
           ["Grün", DEFENSE_TIME_GREEN] spawn mcd_fnc_gameProgressHint;
         };
       };
@@ -122,7 +122,7 @@ mcd_fnc_endGame = {
 
       //hint every 20%
       if (_firstMessageSent) then {
-        if ((DEFENSE_TIME_BLUE*5) mod _startTime == 0) then {
+        if ((DEFENSE_TIME_BLUE*5) mod _startTime == 0 && DEFENSE_TIME_BLUE > 0) then {
           ["Blau", DEFENSE_TIME_BLUE] spawn mcd_fnc_gameProgressHint;
         };
       };
@@ -157,7 +157,7 @@ mcd_fnc_endGame = {
 
       //hint every 20%
       if (_firstMessageSent) then {
-        if ((DEFENSE_TIME_RED*5) mod _startTime == 0) then {
+        if ((DEFENSE_TIME_RED*5) mod _startTime == 0 && DEFENSE_TIME_RED > 0) then {
           ["Rot", DEFENSE_TIME_RED] spawn mcd_fnc_gameProgressHint;
         };
       };
