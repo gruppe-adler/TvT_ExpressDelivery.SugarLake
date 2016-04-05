@@ -5,7 +5,7 @@ STARTDELAY_RED = 120;
 STARTDELAY_GREEN = 360;
 STARTDELAY_CIV = 110;
 
-DEFENSE_TIME = 60;
+DEFENSE_TIME = 900;
 
 //SERVER =======================================================================
 if (isServer) then {

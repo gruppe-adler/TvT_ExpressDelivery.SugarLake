@@ -58,7 +58,7 @@ mcd_fnc_endGame = {
 
   //RED
   if (_teamName == "Rot") then {
-    _veh = createVehicle ["O_Heli_Light_02_v2_F", [9581.85,1989.82,50], [], 0, "FLY"];
+    _veh = createVehicle ["O_Heli_Light_02_v2_F", [9481.85,1989.82,50], [], 0, "FLY"];
     createVehicleCrew _veh;
     _wp = group _veh addWaypoint [getPos trigger_dropoff_red, 0];
     _wp setWaypointType "MOVE";
@@ -75,28 +75,25 @@ mcd_fnc_endGame = {
 //TEAM GRÜN ====================================================================
 [] spawn {
   _startTime = DEFENSE_TIME_GREEN;
-  _halfTime = _startTime / 2;
-  _tenPercentTime = _startTime * 0.1;
   _gameWon = false;
   _firstMessageSent = false;
 
-  //check if trigger is active
+  //check if trigger is active in this loop
   while {true} do {
 
-    //while trigger is active, do the dance
+    //if it is, do this
     while {TRIGGER_GREEN_ACTIVE} do {
+
+      //hint every 20%
+      if (_firstMessageSent) then {
+        if ((DEFENSE_TIME_GREEN*5) mod _startTime == 0) then {
+          ["Grün", DEFENSE_TIME_GREEN] spawn mcd_fnc_gameProgressHint;
+        };
+      };
 
       if (!_firstMessageSent) then {
         ["Grün"] spawn mcd_fnc_firstMessage;
         _firstMessageSent = true;
-      };
-
-      if (DEFENSE_TIME_GREEN == _halfTime) then {
-        ["Grün", _halfTime] spawn mcd_fnc_gameProgressHint;
-      };
-
-      if (DEFENSE_TIME_GREEN == _tenPercentTime) then {
-        ["Grün", _tenPercentTime] spawn mcd_fnc_gameProgressHint;
       };
 
       if (DEFENSE_TIME_GREEN <= 0) exitWith {_gameWon = true};
@@ -110,31 +107,29 @@ mcd_fnc_endGame = {
   };
 };
 
+
 //TEAM BLAU ====================================================================
 [] spawn {
   _startTime = DEFENSE_TIME_BLUE;
-  _halfTime = _startTime / 2;
-  _tenPercentTime = _startTime * 0.1;
   _gameWon = false;
   _firstMessageSent = false;
 
-  //check if trigger is active
+  //check if trigger is active in this loop
   while {true} do {
 
-    //while trigger is active, do the dance
+    //if it is, do this
     while {TRIGGER_BLUE_ACTIVE} do {
+
+      //hint every 20%
+      if (_firstMessageSent) then {
+        if ((DEFENSE_TIME_BLUE*5) mod _startTime == 0) then {
+          ["Blau", DEFENSE_TIME_BLUE] spawn mcd_fnc_gameProgressHint;
+        };
+      };
 
       if (!_firstMessageSent) then {
         ["Blau"] spawn mcd_fnc_firstMessage;
         _firstMessageSent = true;
-      };
-
-      if (DEFENSE_TIME_BLUE == _halfTime) then {
-        ["Blau", _halfTime] spawn mcd_fnc_gameProgressHint;
-      };
-
-      if (DEFENSE_TIME_BLUE == _tenPercentTime) then {
-        ["Blau", _tenPercentTime] spawn mcd_fnc_gameProgressHint;
       };
 
       if (DEFENSE_TIME_BLUE <= 0) exitWith {_gameWon = true};
@@ -151,28 +146,25 @@ mcd_fnc_endGame = {
 //TEAM ROT =====================================================================
 [] spawn {
   _startTime = DEFENSE_TIME_RED;
-  _halfTime = _startTime / 2;
-  _tenPercentTime = _startTime * 0.1;
   _gameWon = false;
   _firstMessageSent = false;
 
-  //check if trigger is active
+  //check if trigger is active in this loop
   while {true} do {
 
-    //while trigger is active, do the dance
+    //if it is, do this
     while {TRIGGER_RED_ACTIVE} do {
+
+      //hint every 20%
+      if (_firstMessageSent) then {
+        if ((DEFENSE_TIME_RED*5) mod _startTime == 0) then {
+          ["Rot", DEFENSE_TIME_RED] spawn mcd_fnc_gameProgressHint;
+        };
+      };
 
       if (!_firstMessageSent) then {
         ["Rot"] spawn mcd_fnc_firstMessage;
         _firstMessageSent = true;
-      };
-
-      if (DEFENSE_TIME_RED == _halfTime) then {
-        ["Rot", _halfTime] spawn mcd_fnc_gameProgressHint;
-      };
-
-      if (DEFENSE_TIME_RED == _tenPercentTime) then {
-        ["Rot", _tenPercentTime] spawn mcd_fnc_gameProgressHint;
       };
 
       if (DEFENSE_TIME_RED <= 0) exitWith {_gameWon = true};
