@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3951.709,20,3684.957};
-		dir[]={0.12706965,-0.30164382,0.94491708};
-		up[]={0.040202376,0.95342016,0.29895332};
-		aside[]={0.99108016,-1.4260877e-009,-0.13327754};
+		pos[]={7189.376,19.370495,4629.8442};
+		dir[]={-0.87674934,-0.48063254,-0.017724607};
+		up[]={-0.48054054,0.87691867,-0.009714311};
+		aside[]={-0.020212034,3.2792741e-008,0.99980122};
 	};
 };
 binarizationWanted=0;
@@ -531,7 +531,7 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="ItemWatch";
+							watch="tf_microdagr";
 							radio="tf_pnr1000a";
 							gps="ItemGPS";
 							goggles="rhs_scarf";
@@ -691,7 +691,7 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="ItemWatch";
+							watch="tf_microdagr";
 							radio="tf_pnr1000a";
 							gps="ItemGPS";
 							headgear="H_Shemag_olive";
@@ -844,7 +844,7 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="ItemWatch";
+							watch="tf_microdagr";
 							radio="tf_pnr1000a";
 							gps="ItemGPS";
 							goggles="G_Bandanna_blk";
@@ -1016,7 +1016,7 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="ItemWatch";
+							watch="tf_microdagr";
 							radio="tf_pnr1000a";
 							gps="ItemGPS";
 							headgear="H_Hat_Kufiya_B";
@@ -1154,7 +1154,7 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="ItemWatch";
+							watch="tf_microdagr";
 							radio="tf_pnr1000a";
 							gps="ItemGPS";
 							goggles="G_Bandanna_blk";
@@ -1306,7 +1306,7 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="ItemWatch";
+							watch="tf_microdagr";
 							radio="tf_pnr1000a";
 							gps="ItemGPS";
 							headgear="H_Hat_Kufiya_D";
@@ -1476,7 +1476,7 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="ItemWatch";
+							watch="tf_microdagr";
 							radio="tf_pnr1000a";
 							gps="ItemGPS";
 							goggles="G_Bandanna_tan";
@@ -1648,7 +1648,7 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="ItemWatch";
+							watch="tf_microdagr";
 							radio="tf_pnr1000a";
 							gps="ItemGPS";
 							headgear="H_Hat_Kufiya_F";
@@ -1785,7 +1785,7 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="ItemWatch";
+							watch="tf_microdagr";
 							radio="tf_pnr1000a";
 							gps="ItemGPS";
 							headgear="H_Hat_Face_Wrap_Olive";
@@ -1924,7 +1924,7 @@ class Mission
 							};
 							map="ItemMap";
 							compass="ItemCompass";
-							watch="ItemWatch";
+							watch="tf_microdagr";
 							radio="tf_pnr1000a";
 							gps="ItemGPS";
 							headgear="H_ShemagOpen_tan";

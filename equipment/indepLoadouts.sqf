@@ -32,7 +32,7 @@ _indep_teamlead = {
   comment "Add items";
   player linkItem "ItemMap";
   player linkItem "ItemCompass";
-  player linkItem "ItemWatch";
+  player linkItem "tf_microdagr";
   player linkItem "tf_pnr1000a";
   player linkItem "ItemGPS";
 };
@@ -70,7 +70,7 @@ _indep_squadlead = {
   comment "Add items";
   player linkItem "ItemMap";
   player linkItem "ItemCompass";
-  player linkItem "ItemWatch";
+  player linkItem "tf_microdagr";
   player linkItem "tf_pnr1000a";
   player linkItem "ItemGPS";
 };
@@ -110,7 +110,7 @@ _indep_mg = {
   comment "Add items";
   player linkItem "ItemMap";
   player linkItem "ItemCompass";
-  player linkItem "ItemWatch";
+  player linkItem "tf_microdagr";
   player linkItem "tf_pnr1000a";
   player linkItem "ItemGPS";
 };
@@ -150,7 +150,7 @@ _indep_mg_ass = {
   comment "Add items";
   player linkItem "ItemMap";
   player linkItem "ItemCompass";
-  player linkItem "ItemWatch";
+  player linkItem "tf_microdagr";
   player linkItem "tf_pnr1000a";
   player linkItem "ItemGPS";
 };
@@ -192,7 +192,7 @@ _indep_medic_1 = {
   comment "Add items";
   player linkItem "ItemMap";
   player linkItem "ItemCompass";
-  player linkItem "ItemWatch";
+  player linkItem "tf_microdagr";
   player linkItem "tf_pnr1000a";
   player linkItem "ItemGPS";
 };
@@ -234,7 +234,7 @@ _indep_medic_2 = {
   comment "Add items";
   player linkItem "ItemMap";
   player linkItem "ItemCompass";
-  player linkItem "ItemWatch";
+  player linkItem "tf_microdagr";
   player linkItem "tf_pnr1000a";
   player linkItem "ItemGPS";
 };
@@ -272,7 +272,7 @@ _indep_rifleman_1 = {
   comment "Add items";
   player linkItem "ItemMap";
   player linkItem "ItemCompass";
-  player linkItem "ItemWatch";
+  player linkItem "tf_microdagr";
   player linkItem "tf_pnr1000a";
   player linkItem "ItemGPS";
 };
@@ -310,7 +310,7 @@ _indep_rifleman_2 = {
   comment "Add items";
   player linkItem "ItemMap";
   player linkItem "ItemCompass";
-  player linkItem "ItemWatch";
+  player linkItem "tf_microdagr";
   player linkItem "tf_pnr1000a";
   player linkItem "ItemGPS";
 };
@@ -353,7 +353,7 @@ _indep_explosives = {
   comment "Add items";
   player linkItem "ItemMap";
   player linkItem "ItemCompass";
-  player linkItem "ItemWatch";
+  player linkItem "tf_microdagr";
   player linkItem "tf_pnr1000a";
   player linkItem "ItemGPS";
 };
@@ -390,7 +390,7 @@ _indep_marksman = {
   comment "Add items";
   player linkItem "ItemMap";
   player linkItem "ItemCompass";
-  player linkItem "ItemWatch";
+  player linkItem "tf_microdagr";
   player linkItem "tf_pnr1000a";
   player linkItem "ItemGPS";
 };
