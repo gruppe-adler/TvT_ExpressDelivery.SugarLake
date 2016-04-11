@@ -15,8 +15,8 @@ _opfor_squadlead = {
 	comment "Add containers";
 	player forceAddUniform "U_Office_B";
 	player addItemToUniform "FirstAidKit";
-	for "_i" from 1 to 8 do {player addItemToUniform "ACE_fieldDressing";};
-	for "_i" from 1 to 2 do {player addItemToUniform "ACE_morphine";};
+	for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
+	for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
 	player addItemToUniform "ACE_EarPlugs";
 	for "_i" from 1 to 2 do {player addItemToUniform "rhs_mag_rdg2_white";};
 	for "_i" from 1 to 2 do {player addItemToUniform "rhs_mag_rgo";};
@@ -61,11 +61,11 @@ _opfor_mg = {
 	player addItemToUniform "FirstAidKit";
 	for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
 	for "_i" from 1 to 2 do {player addItemToUniform "ACE_EarPlugs";};
-	for "_i" from 1 to 3 do {player addItemToUniform "ACE_morphine";};
+	for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
 	player addVest "V_Chestrig_blk";
 	for "_i" from 1 to 2 do {player addItemToVest "rhs_mag_rgo";};
 	player addItemToVest "rhs_100Rnd_762x54mmR";
-	for "_i" from 1 to 3 do {player addItemToVest "rhs_mag_rdg2_white";};
+	for "_i" from 1 to 2 do {player addItemToVest "rhs_mag_rdg2_white";};
 	player addBackpack "B_FieldPack_blk";
 	player addItemToBackpack "rhs_100Rnd_762x54mmR";
 	for "_i" from 1 to 3 do {player addItemToBackpack "rhs_100Rnd_762x54mmR_green";};
@@ -394,7 +394,7 @@ _opfor_explosive = {
 	for "_i" from 1 to 8 do {player addItemToVest "rhs_30Rnd_545x39_AK";};
 	player addBackpack "rhs_assault_umbts";
 	for "_i" from 1 to 2 do {player addItemToBackpack "APERSTripMine_Wire_Mag";};
-	for "_i" from 1 to 4 do {player addItemToBackpack "rhsusf_m112_mag";};
+	for "_i" from 1 to 4 do {player addItemToBackpack "DemoCharge_Remote_Mag";};
 	for "_i" from 1 to 4 do {player addItemToBackpack "rhs_mag_rgo";};
 	player addHeadgear "H_Hat_CapSov_B";
 	player addGoggles "NeckTight_GryBLK";

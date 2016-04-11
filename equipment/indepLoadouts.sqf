@@ -319,41 +319,43 @@ _indep_explosives = {
   comment "Exported from Arsenal by McDiod";
 
   comment "Remove existing items";
-  removeAllWeapons this;
-  removeAllItems this;
-  removeAllAssignedItems this;
-  removeUniform this;
-  removeVest this;
-  removeBackpack this;
-  removeHeadgear this;
-  removeGoggles this;
+  removeAllWeapons player;
+  removeAllItems player;
+  removeAllAssignedItems player;
+  removeUniform player;
+  removeVest player;
+  removeBackpack player;
+  removeHeadgear player;
+  removeGoggles player;
 
   comment "Add containers";
-  this forceAddUniform "U_TKLocalCombat_E";
-  this addItemToUniform "FirstAidKit";
-  for "_i" from 1 to 10 do {this addItemToUniform "ACE_fieldDressing";};
-  for "_i" from 1 to 2 do {this addItemToUniform "ACE_EarPlugs";};
-  for "_i" from 1 to 5 do {this addItemToUniform "ACE_morphine";};
-  this addItemToUniform "ACE_Cellphone";
-  this addVest "V_ChestRig_light_A";
-  for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_white";};
-  for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgo";};
-  for "_i" from 1 to 9 do {this addItemToVest "rhs_30Rnd_762x39mm";};
-  this addBackpack "B_RucksackBag_B";
-  for "_i" from 1 to 3 do {this addItemToBackpack "IEDLandSmall_Remote_Mag";};
-  this addHeadgear "H_Hat_Pakol";
-  this addGoggles "G_Bandanna_tan";
+  player forceAddUniform "U_TKLocalCombat_E";
+  player addItemToUniform "FirstAidKit";
+  for "_i" from 1 to 10 do {player addItemToUniform "ACE_fieldDressing";};
+  for "_i" from 1 to 2 do {player addItemToUniform "ACE_EarPlugs";};
+  for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
+  player addItemToUniform "ACE_Cellphone";
+  player addVest "V_ChestRig_light_A";
+  for "_i" from 1 to 2 do {player addItemToVest "rhs_mag_rdg2_white";};
+  for "_i" from 1 to 2 do {player addItemToVest "rhs_mag_rgo";};
+  for "_i" from 1 to 9 do {player addItemToVest "rhs_30Rnd_762x39mm";};
+  player addBackpack "B_RucksackBag_B";
+  for "_i" from 1 to 2 do {player addItemToBackpack "IEDLandSmall_Remote_Mag";};
+  for "_i" from 1 to 2 do {player addItemToBackpack "APERSTripMine_Wire_Mag";};
+  player addItemToBackpack "IEDUrbanSmall_Remote_Mag";
+  player addHeadgear "H_Hat_Pakol";
+  player addGoggles "G_Bandanna_tan";
 
   comment "Add weapons";
-  this addWeapon "rhs_weap_akms";
-  this addWeapon "Binocular";
+  player addWeapon "rhs_weap_akms";
+  player addWeapon "Binocular";
 
   comment "Add items";
-  this linkItem "ItemMap";
-  this linkItem "ItemCompass";
-  this linkItem "ItemWatch";
-  this linkItem "tf_pnr1000a";
-  this linkItem "ItemGPS";
+  player linkItem "ItemMap";
+  player linkItem "ItemCompass";
+  player linkItem "ItemWatch";
+  player linkItem "tf_pnr1000a";
+  player linkItem "ItemGPS";
 };
 
 _indep_marksman = {

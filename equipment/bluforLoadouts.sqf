@@ -22,7 +22,7 @@ _blufor_rifleman = {
 
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
-  for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
+  for "_i" from 1 to 4 do {player addItemToVest "SmokeShell";};
   player addHeadgear "SMA_Helmet_Black";
   player addGoggles "G_Balaclava_blk";
 
@@ -62,7 +62,7 @@ _blufor_squadLead = {
   for "_i" from 1 to 9 do {player addItemToVest "30Rnd_556x45_Stanag";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
-  for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
+  for "_i" from 1 to 4 do {player addItemToVest "SmokeShell";};
   player addHeadgear "SMA_Helmet_Black";
   player addGoggles "rhs_googles_clear";
 
@@ -103,7 +103,7 @@ _blufor_mg = {
   for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
   player addItemToVest "HandGrenade";
   player addBackpack "B_AssaultPack_blk";
-  for "_i" from 1 to 4 do {player addItemToBackpack "rhsusf_100Rnd_556x45_soft_pouch";};
+  for "_i" from 1 to 3 do {player addItemToBackpack "rhsusf_100Rnd_556x45_soft_pouch";};
   player addHeadgear "SMA_Helmet_Black";
   player addGoggles "G_Balaclava_blk";
 
@@ -141,9 +141,9 @@ _blufor_mg_ass = {
   for "_i" from 1 to 9 do {player addItemToVest "30Rnd_556x45_Stanag";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   for "_i" from 1 to 2 do {player addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";};
-  for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
+  for "_i" from 1 to 4 do {player addItemToVest "SmokeShell";};
   player addBackpack "B_AssaultPack_blk";
-  for "_i" from 1 to 4 do {player addItemToBackpack "rhsusf_100Rnd_556x45_soft_pouch";};
+  for "_i" from 1 to 3 do {player addItemToBackpack "rhsusf_100Rnd_556x45_soft_pouch";};
   player addHeadgear "SMA_Helmet_Black";
   player addGoggles "G_Balaclava_blk";
 
@@ -180,13 +180,13 @@ _blufor_medic = {
   for "_i" from 1 to 2 do {player addItemToUniform "ACE_EarPlugs";};
   for "_i" from 1 to 5 do {player addItemToUniform "ACE_morphine";};
   player addVest "V_Police_heavy";
-  for "_i" from 1 to 8 do {player addItemToVest "30Rnd_556x45_Stanag";};
+  for "_i" from 1 to 9 do {player addItemToVest "30Rnd_556x45_Stanag";};
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   player addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";
-  for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
+  for "_i" from 1 to 4 do {player addItemToVest "SmokeShell";};
   player addBackpack "B_Kitbag_A";
   for "_i" from 1 to 40 do {player addItemToBackpack "ACE_fieldDressing";};
-  for "_i" from 1 to 2 do {player addItemToBackpack "ACE_bloodIV_250";};
+  for "_i" from 1 to 4 do {player addItemToBackpack "ACE_bloodIV_250";};
   for "_i" from 1 to 2 do {player addItemToBackpack "ACE_EarPlugs";};
   for "_i" from 1 to 10 do {player addItemToBackpack "ACE_epinephrine";};
   for "_i" from 1 to 20 do {player addItemToBackpack "ACE_morphine";};
@@ -228,7 +228,7 @@ _blufor_smg = {
   player addVest "V_Police_heavy";
   for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
   player addItemToVest "rhsusf_mag_15Rnd_9x19_JHP";
-  for "_i" from 1 to 2 do {player addItemToVest "SmokeShell";};
+  for "_i" from 1 to 3 do {player addItemToVest "SmokeShell";};
   for "_i" from 1 to 8 do {player addItemToVest "30Rnd_9x21_Mag";};
   player addHeadgear "SMA_Helmet_Black";
   player addGoggles "G_Balaclava_blk";
